@@ -1,0 +1,11 @@
+.page {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  height: 100%;
+}
+
+.page__body {
+  min-width: 320px;
+  margin: auto;
+}
+

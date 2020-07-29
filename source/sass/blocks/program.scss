@@ -1,0 +1,83 @@
+.program {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program__title--background::before {
+  content: "";
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  width: 320px;
+  height: 305px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+}
+
+.program::before {
+  content: "";
+  width: 100%;
+  height: 305px;
+  background-color: $green-2;
+  display: block;
+  position: absolute;
+  z-index: -2;
+  max-width: 767px;
+}
+
+.program__title {
+  font-family: "Oswald";
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  text-align: center;
+  padding-top: 27px;
+  padding-bottom: 25px;
+  position: relative;
+  width: 320px;
+  color: white;
+  font-style: normal;
+}
+
+.program__slogan {
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 29px;
+  color: white;
+}
+
+.program__button {
+  width: 280px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  text-transform: uppercase;
+  background-color: $green;
+  color: white;
+  text-decoration: none;
+}
+
+.program__item {
+  width: 280px;
+  height: 266px;
+}
+
+.program__title-item {
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+

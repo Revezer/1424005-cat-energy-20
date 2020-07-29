@@ -1,0 +1,24 @@
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-list__item {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: $black;
+  display: block;
+  border-top: 1px solid #e6e6e6;
+  font-family: "Oswald";
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.site-list__item--border{
+  border-bottom: 1px solid #e6e6e6;
+}
+
