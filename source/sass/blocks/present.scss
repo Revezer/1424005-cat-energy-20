@@ -1,0 +1,31 @@
+.present {
+  width: 280px;
+  height: 289px;
+  background-color: $green;
+  background-image: url(../../img/gift-photo-mobile@1x.jpg);
+  margin-left: 20px;
+  margin-bottom: 35px;
+  margin-top: 39px;
+}
+
+.present__text {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  position: relative;
+  text-align: center;
+  margin: 0px;
+  padding-top: 186px;
+}
+
+.present__text::before {
+  content: "";
+  background-image: url(../../img/icon_gift.svg);
+  width: 78px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  top: 58px;
+  left: 101px;
+}

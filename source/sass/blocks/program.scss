@@ -8,6 +8,7 @@
 
 .program__title--background::before {
   content: "";
+  background-color: $green-2;
   background-image: url("../img/index-background-mobile@1x.jpg");
   width: 320px;
   height: 305px;
@@ -15,17 +16,6 @@
   position: absolute;
   z-index: -1;
   top: 0px;
-}
-
-.program::before {
-  content: "";
-  width: 100%;
-  height: 305px;
-  background-color: $green-2;
-  display: block;
-  position: absolute;
-  z-index: -2;
-  max-width: 767px;
 }
 
 .program__title {
@@ -39,7 +29,7 @@
   position: relative;
   width: 320px;
   color: white;
-  font-style: normal;
+  font-weight: normal;
 }
 
 .program__slogan {
@@ -72,6 +62,7 @@
 .program__item {
   width: 280px;
   height: 266px;
+  background-color: $grey;
 }
 
 .program__title-item {
@@ -79,5 +70,75 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  font-weight: normal;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 90px;
 }
 
+.program__title-item--slim::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 53px;
+  background-image: url(../../img/cat_back.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 210px;
+  bottom: -9px;
+}
+
+.program__title-item--pro::before {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 50px;
+  background-image: url(../../img/cat_back-pro.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 205px;
+  bottom: -9px;
+}
+
+.program__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Arial;
+  width: 240px;
+  margin: 0px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #D9D9D9;
+  color: $dark-grey;
+}
+
+.program__link {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: black;
+  width: 226px;
+  position: relative;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.program__item--margin {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.program__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(../../img/icon-arrow.svg);
+  width: 32px;
+  height: 12px;
+  background-repeat: no-repeat;
+  bottom: 5px;
+  left: 120px;
+}

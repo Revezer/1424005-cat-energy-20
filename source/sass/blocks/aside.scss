@@ -1,0 +1,71 @@
+.aside {
+  background-color: #EAEAEA;
+  margin-top: 40px;
+}
+
+.aside__title {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  padding-left: 20px;
+  padding-top: 27px;
+  padding-bottom: 33px;
+  margin: 0px;
+}
+
+.aside__text {
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0px;
+  padding-left: 20px;
+  color: $dark-grey;
+}
+
+.aside__item {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aside__content-info {
+  text-align: center;
+}
+
+.aside__info {
+  font-family: "Oswald";
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.aside__content {
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 12px;
+  color: $dark-grey;
+}
+
+.aside__text-info {
+  text-align: center;
+  font-family: "Oswald";
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 42px;
+}
+
+.aside__item-switching {
+  display: flex;
+  justify-content: space-around;
+}
+
+.aside__text-switching {
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+}
