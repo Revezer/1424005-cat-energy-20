@@ -3,24 +3,27 @@
   margin-top: 40px;
 }
 
+.title-aside {
+  @include oswald;
+  @include text(36px, 40px, none, black)
+}
+
 .aside__title {
-  font-family: "Oswald";
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 40px;
   padding-left: 20px;
   padding-top: 27px;
   padding-bottom: 33px;
   margin: 0px;
 }
 
+.text-aside {
+  @include arial;
+  @include text(14px, 18px, none, $dark-grey)
+}
+
 .aside__text {
-  font-family: Arial;
-  font-size: 14px;
-  line-height: 18px;
   margin: 0px;
   padding-left: 20px;
-  color: $dark-grey;
+  width: 272px;
 }
 
 .aside__item {
@@ -32,27 +35,32 @@
   text-align: center;
 }
 
+.info-aside {
+  @include oswald;
+  @include text(24px, 24px, uppercase, black)
+}
+
 .aside__info {
-  font-family: "Oswald";
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
+
+}
+
+.content-aside {
+  @include arial;
+  @include text(12px, 12px, none, $dark-grey)
+  white-space: pre-line;
 }
 
 .aside__content {
-  font-family: Arial;
-  font-size: 12px;
-  line-height: 12px;
-  color: $dark-grey;
+
+}
+
+.info-text {
+  @include oswald;
+  @include text(14px, 20px, uppercase, black)
+  text-align: center;
 }
 
 .aside__text-info {
-  text-align: center;
-  font-family: "Oswald";
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 42px;
 }
@@ -62,10 +70,11 @@
   justify-content: space-around;
 }
 
+.switching-text {
+  @include oswald;
+  @include text(16px, 20px, uppercase, black)
+}
+
 .aside__text-switching {
-  font-family: "Oswald";
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
 
 }

@@ -3,11 +3,9 @@
   margin-left: 20px;
 }
 
-.info__title {
-  font-family: "Oswald";
-  font-size: 38px;
-  line-height: 40px;
-  font-weight: normal;
+.title-info {
+  @include oswald;
+  @include text(38px, 40px, none, black);
 }
 
 .info__list {
@@ -17,13 +15,15 @@
   gap: 20px;
 }
 
+.item-info {
+  @include arial;
+  @include text(14px, 18px, none, $dark-grey)
+}
+
 .info__item {
-  font-family: Arial;
-  font-size: 14px;
-  line-height: 18px;
   padding-left: 80px;
   position: relative;
-  color: $dark-grey;
+  width: 205px;
 }
 
 .info__item-icon-leaf::before {
@@ -35,7 +35,7 @@
   background-image: url(../../img/leaf.png);
   background-repeat: no-repeat;
   position: absolute;
-  right: 260px;
+  right: 225px;
   top: -3px;
 }
 
@@ -48,7 +48,7 @@
   background-image: url(../../img/powder.png);
   background-repeat: no-repeat;
   position: absolute;
-  right: 260px;
+  right: 225px;
   top: -3px;
 }
 
@@ -61,7 +61,7 @@
   background-image: url(../../img/dining.png);
   background-repeat: no-repeat;
   position: absolute;
-  right: 260px;
+  right: 225px;
   top: -3px;
 }
 
@@ -74,6 +74,6 @@
   background-image: url(../../img/clock.png);
   background-repeat: no-repeat;
   position: absolute;
-  right: 260px;
+  right: 225px;
   top: -3px;
 }

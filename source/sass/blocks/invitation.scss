@@ -12,17 +12,18 @@
   background-color: white;
 }
 
+.title-invitation {
+  @include oswald;
+  @include text(16px, 18px, uppercase, black)
+}
+
 .invitation__title {
-  font-family: "Oswald";
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
+}
+
+.text-invitation {
+  @include arial;
+  @include text(14px, 20px, none, $dark-grey)
 }
 
 .invitation__text {
-  font-family: Arial;
-  font-size: 14px;
-  line-height: 20px;
-  color: $dark-grey;
 }
