@@ -1,6 +1,4 @@
 .program {
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,10 +13,10 @@
   display: block;
   position: absolute;
   z-index: -1;
-  top: 0px;
+  top: 0;
 }
 
-.title-index{
+.title-index {
   @include oswald;
   @include text (36px, 36px, none, white);
   margin: 0;
@@ -32,7 +30,7 @@
   padding-bottom: 25px;
 }
 
-.slogan-index{
+.slogan-index {
   @include oswald;
   @include text (14px, 14px, uppercase, white);
   text-align: center;
@@ -77,26 +75,25 @@
   padding-left: 90px;
 }
 
-.program__title-item--slim::before {
+.program__title-item::before {
   content: "";
   display: block;
-  width: 50px;
-  height: 53px;
-  background-image: url(../../img/cat_back.svg);
   background-repeat: no-repeat;
   position: absolute;
+}
+
+.program__title-item--slim::before {
+  width: 50px;
+  height: 53px;
+  background-image: url("../../img/cat_back.svg");
   right: 210px;
   bottom: -9px;
 }
 
 .program__title-item--pro::before {
-  content: "";
-  display: block;
   width: 67px;
   height: 50px;
-  background-image: url(../../img/cat_back-pro.svg);
-  background-repeat: no-repeat;
-  position: absolute;
+  background-image: url("../../img/cat_back-pro.svg");
   right: 205px;
   bottom: -9px;
 }
@@ -108,16 +105,16 @@
 
 .program__text {
   width: 240px;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 15px;
   margin-left: 20px;
   padding-bottom: 22px;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .link-index {
   @include oswald;
-  @include text(16px, 16px, uppercase, black)
+  @include text(16px, 16px, uppercase, black);
   text-decoration: none;
 }
 
@@ -136,7 +133,7 @@
   content: "";
   display: block;
   position: absolute;
-  background-image: url(../../img/icon-arrow.svg);
+  background-image: url("../../img/icon-arrow.svg");
   width: 32px;
   height: 12px;
   background-repeat: no-repeat;

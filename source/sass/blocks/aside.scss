@@ -1,27 +1,21 @@
 .aside {
-  background-color: #EAEAEA;
-  margin-top: 40px;
-}
-
-.title-aside {
-  @include oswald;
-  @include text(36px, 40px, none, black)
+  background-color: #eaeaea;
 }
 
 .aside__title {
   padding-left: 20px;
   padding-top: 27px;
   padding-bottom: 33px;
-  margin: 0px;
-}
+  margin: 0;
 
-.text-aside {
-  @include arial;
-  @include text(14px, 18px, none, $dark-grey)
+  @include oswald;
+  @include text(36px, 40px, none, black);
 }
 
 .aside__text {
-  margin: 0px;
+  @include arial;
+  @include text(14px, 18px, none, $dark-grey);
+  margin: 0;
   padding-left: 20px;
   width: 272px;
 }
@@ -35,34 +29,23 @@
   text-align: center;
 }
 
-.info-aside {
-  @include oswald;
-  @include text(24px, 24px, uppercase, black)
-}
-
 .aside__info {
-
-}
-
-.content-aside {
-  @include arial;
-  @include text(12px, 12px, none, $dark-grey)
-  white-space: pre-line;
+  @include oswald;
+  @include text(24px, 24px, uppercase, black);
 }
 
 .aside__content {
-
-}
-
-.info-text {
-  @include oswald;
-  @include text(14px, 20px, uppercase, black)
-  text-align: center;
+  @include arial;
+  @include text(12px, 12px, none, $dark-grey);
+  white-space: pre-line;
 }
 
 .aside__text-info {
+  @include oswald;
+  @include text(14px, 20px, uppercase, black);
   margin-top: 25px;
   margin-bottom: 42px;
+  text-align: center;
 }
 
 .aside__item-switching {
@@ -70,11 +53,7 @@
   justify-content: space-around;
 }
 
-.switching-text {
-  @include oswald;
-  @include text(16px, 20px, uppercase, black)
-}
-
 .aside__text-switching {
-
+  @include oswald;
+  @include text(16px, 20px, uppercase, black);
 }

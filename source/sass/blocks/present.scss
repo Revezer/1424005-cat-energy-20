@@ -1,11 +1,6 @@
 .present {
-  width: 280px;
-  height: 289px;
   background-color: $green;
-  background-image: url(../../img/gift-photo-mobile@1x.jpg);
-  margin-left: 20px;
-  margin-bottom: 35px;
-  margin-top: 39px;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -13,11 +8,9 @@
 }
 
 .present__text {
-  font-family: Arial;
-  font-size: 16px;
-  line-height: 20px;
-  color: white;
-  margin: 0px;
+  @include arial;
+  @include text(16px, 20px, none, white);
+  margin: 0;
   white-space: pre-line;
   text-align: center;
 }
