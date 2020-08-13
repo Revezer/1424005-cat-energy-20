@@ -3,6 +3,9 @@
 }
 
 .site-list__item {
+  @include oswald;
+  @include text(20px, 20px, uppercase, $black);
+  text-decoration: none;
   display: block;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -12,10 +15,4 @@
 
 .site-list__item--border {
   border-bottom: 1px solid #e6e6e6;
-}
-
-.link-site {
-  @include oswald;
-  @include text(20px, 20px, uppercase, $black);
-  text-decoration: none;
 }

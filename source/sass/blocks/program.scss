@@ -16,14 +16,11 @@
   top: 0;
 }
 
-.title-index {
+.program__title {
   @include oswald;
   @include text (36px, 36px, none, white);
   margin: 0;
   text-align: center;
-}
-
-.program__title {
   position: relative;
   width: 320px;
   padding-top: 27px;
@@ -42,10 +39,6 @@
 }
 
 .program__button {
-  margin-top: 3px;
-}
-
-.button-index {
   @include text(14px, 18px, uppercase, white);
   @include oswald;
   text-decoration: none;
@@ -55,6 +48,7 @@
   align-items: center;
   width: 280px;
   height: 40px;
+  margin-top: 3px;
 }
 
 .program__item {
@@ -63,12 +57,9 @@
   background-color: $grey;
 }
 
-.title-item {
+.program__title-item {
   @include oswald;
   @include text(24px, 37px, uppercase, black);
-}
-
-.program__title-item {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -98,12 +89,9 @@
   bottom: -9px;
 }
 
-.text-item {
+.program__text {
   @include arial;
   @include text(14px, 18px, none, $dark-grey);
-}
-
-.program__text {
   width: 240px;
   margin: 0;
   margin-bottom: 15px;
