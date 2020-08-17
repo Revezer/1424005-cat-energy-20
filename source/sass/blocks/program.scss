@@ -1,0 +1,130 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program__title--background::before {
+  content: "";
+  background-color: $green-2;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  width: 320px;
+  height: 305px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.program__title {
+  @include oswald;
+  @include text (36px, 36px, none, white);
+  margin: 0;
+  text-align: center;
+  position: relative;
+  width: 320px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.slogan-index {
+  @include oswald;
+  @include text (14px, 14px, uppercase, white);
+  text-align: center;
+}
+
+.program__slogan {
+  margin: 0;
+  padding-bottom: 29px;
+}
+
+.program__button {
+  @include text(14px, 18px, uppercase, white);
+  @include oswald;
+  text-decoration: none;
+  background-color: $green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 40px;
+  margin-top: 3px;
+}
+
+.program__item {
+  width: 280px;
+  height: 266px;
+  background-color: $grey;
+}
+
+.program__title-item {
+  @include oswald;
+  @include text(24px, 37px, uppercase, black);
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 90px;
+}
+
+.program__title-item::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.program__title-item--slim::before {
+  width: 50px;
+  height: 53px;
+  background-image: url("../../img/cat_back.svg");
+  right: 210px;
+  bottom: -9px;
+}
+
+.program__title-item--pro::before {
+  width: 67px;
+  height: 50px;
+  background-image: url("../../img/cat_back-pro.svg");
+  right: 205px;
+  bottom: -9px;
+}
+
+.program__text {
+  @include arial;
+  @include text(14px, 18px, none, $dark-grey);
+  width: 240px;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.link-index {
+  @include oswald;
+  @include text(16px, 16px, uppercase, black);
+  text-decoration: none;
+}
+
+.program__link {
+  width: 226px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.program__item--margin {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+.program__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../img/icon-arrow.svg");
+  width: 32px;
+  height: 12px;
+  background-repeat: no-repeat;
+  bottom: 5px;
+  left: 120px;
+}

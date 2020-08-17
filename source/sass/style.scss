@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+@import "varyables.scss";
+@import "mixins.scss";
+@import "viewports";
+@import "global.scss";
+@import "blocks/page.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/program.scss";
+@import "blocks/info.scss";
+@import "blocks/aside.scss";
+@import "blocks/invitation.scss";
+@import "blocks/page-main.scss";
+@import "blocks/product.scss";
+@import "blocks/dropdown.scss";
+@import "blocks/additional-product.scss";
+@import "blocks/present.scss";
+@import "blocks/form.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";

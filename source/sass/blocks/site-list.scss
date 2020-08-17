@@ -1,0 +1,18 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__item {
+  @include oswald;
+  @include text(20px, 20px, uppercase, $black);
+  text-decoration: none;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.site-list__item--border {
+  border-bottom: 1px solid #e6e6e6;
+}

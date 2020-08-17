@@ -1,0 +1,24 @@
+.present {
+  background-color: $green;
+  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.present__text {
+  @include arial;
+  @include text(16px, 20px, none, white);
+  margin: 0;
+  white-space: pre-line;
+  text-align: center;
+}
+
+/*.present__text::before {
+  content: "";
+  background-image: url(../../img/icon_gift.svg);
+  width: 78px;
+  height: 80px;
+  display: block;
+}*/

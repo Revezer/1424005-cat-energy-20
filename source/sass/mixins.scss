@@ -1,0 +1,16 @@
+@mixin oswald {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+}
+
+@mixin text($fontsize, $lineheight, $transform, $color) {
+  font-size: $fontsize;
+  line-height: $lineheight;
+  text-transform: $transform;
+  color: $color;
+}
+
+@mixin arial {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+}

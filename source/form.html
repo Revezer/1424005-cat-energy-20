@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -23,14 +25,14 @@
             <a class="site-list__item" href="catalog.html">Каталог продукции</a>
           </li>
           <li>
-            <a class="site-list__item site-list__item--active">Подбор программы</a>
+            <a class="site-list__item site-list__item--active site-list__item--border">Подбор программы</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__title">Подбор Программы</h1>
-      <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <h1 class="page-main__title-text">Подбор Программы</h1>
+      <p class="page-main__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post" name="form">
         <fieldset class="form__wrap">
           <label class="form__label">
@@ -49,19 +51,19 @@
         <ul class="form__list">
           <li class="form__item">
             <input type="radio" class="form__radio" name="radio" id="filter-slimming" checked>
-            <label for="filter-slimming">
+            <label class="form__radio-label" for="filter-slimming">
               <span class="form__filter-text">Похудение</span>
             </label>
           </li>
           <li class="form__item">
             <input type="radio" class="form__radio" name="radio" id="filter-masses">
-            <label for="filter-masses">
+            <label class="form__radio-label" for="filter-masses">
               <span class="form__filter-text">Набор массы</span>
             </label>
           </li>
           <li class="form__item">
             <input type="radio" class="form__radio" name="radio" id="filter-advice">
-            <label for="filter-advice">
+            <label class="form__radio-label" for="filter-advice">
               <span class="form__filter-text">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
@@ -83,28 +85,28 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Дополнительно</legend>
-          <ul class="form__list">
+          <ul class="form__list-checkbox">
             <li class="form__item">
               <input type="checkbox" class="form__checkbox" name="checkbox" id="checkbox-sweetener" checked>
-              <label for="checkbox-sweetener">
+              <label for="checkbox-sweetener" class="form__checkbox-label">
                 <span class="form__checkbox-text">Сахарозаменитель</span>
               </label>
             </li>
             <li class="form__item">
               <input type="checkbox" class="form__checkbox" name="checkbox" id="checkbox-water">
-              <label for="checkbox-water">
+              <label for="checkbox-water" class="form__checkbox-label">
                 <span class="form__checkbox-text">Питьевая вода</span>
               </label>
             </li>
             <li class="form__item">
               <input type="checkbox" class="form__checkbox" name="checkbox" id="checkbox-milk">
-              <label for="checkbox-milk">
+              <label for="checkbox-milk" class="form__checkbox-label">
                 <span class="form__checkbox-text">Молоко</span>
               </label>
             </li>
             <li class="form__item">
               <input type="checkbox" class="form__checkbox" name="checkbox" id="checkbox-vitamins">
-              <label for="checkbox-vitamins">
+              <label for="checkbox-vitamins" class="form__checkbox-label">
                 <span class="form__checkbox-text">Витамины</span>
               </label>
             </li>
@@ -113,7 +115,7 @@
         <button class="form__button" type="submit">Отправить заявку</button>
         <span class="form__text-item">* — Обязательные поля</span>
       </form>
-      <section class="invitation">
+      <section class="invitation page-main__invitation">
         <h3 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h3>
         <p class="invitation__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </section>
@@ -122,30 +124,29 @@
       </div>
     </main>
     <footer class="page-footer">
-      <img class="page-footer__img" src="https://via.placeholder.com/150x150" width="128" height="24" alt="Cat Energy">
+      <img class="page-footer__img" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" aria-label="ссылка на Vkontakte" href="#">
+            <a class="social__link social__link--icon-vk" aria-label="ссылка на Vkontakte" href="#">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" aria-label="ссылка на Instagram" href="#">
+            <a class="social__link social__link--icon-i" aria-label="ссылка на Instagram" href="#">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" aria-label="ссылка на Facebook" href="#">
+            <a class="social__link social__link--icon-fb" aria-label="ссылка на Facebook" href="#">
             </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <a class="copyright__link" aria-label="ссылка на HTML Academy">
+        <a class="copyright__link-img-text" aria-label="ссылка на HTML Academy">
         </a>
-        <a class="copyright__link" aria-label="ссылка на HTML Academy">
+        <a class="copyright__link-img" aria-label="ссылка на HTML Academy">
         </a>
       </div>
     </footer>
-
   </body>
 </html>
