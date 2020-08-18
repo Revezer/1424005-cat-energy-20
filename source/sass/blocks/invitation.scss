@@ -1,0 +1,19 @@
+.invitation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: $grey;
+}
+
+.invitation--background {
+  background-color: white;
+}
+
+.invitation__title {
+  @include oswald;
+  @include text(16px, 18px, uppercase, black);
+}
+
+.invitation__text {
+  @include arial;
+  @include text(14px, 20px, none, $dark-grey);
+}

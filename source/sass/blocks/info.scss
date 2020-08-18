@@ -1,0 +1,47 @@
+.info__title {
+  @include oswald;
+  @include text(38px, 40px, none, black);
+}
+
+.info__list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 20px;
+}
+
+.info__item {
+  @include arial;
+  @include text(14px, 18px, none, $dark-grey);
+  padding-left: 80px;
+  position: relative;
+  width: 205px;
+}
+
+.info__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $green;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 225px;
+  top: -3px;
+}
+
+.info__item--icon-leaf::before {
+  background-image: url("../../img/leaf.svg");
+}
+
+.info__item--icon-powder::before {
+  background-image: url("../../img/powder.svg");
+}
+
+.info__item--icon-dining::before {
+  background-image: url("../../img/dining.svg");
+}
+
+.info__item--icon-clock::before {
+  background-image: url("../../img/clock.svg");
+}
