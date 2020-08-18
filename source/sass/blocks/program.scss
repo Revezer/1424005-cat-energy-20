@@ -27,13 +27,10 @@
   padding-bottom: 25px;
 }
 
-.slogan-index {
+.program__slogan {
   @include oswald;
   @include text (14px, 14px, uppercase, white);
   text-align: center;
-}
-
-.program__slogan {
   margin: 0;
   padding-bottom: 29px;
 }
@@ -100,13 +97,10 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-.link-index {
+.program__link {
   @include oswald;
   @include text(16px, 16px, uppercase, black);
   text-decoration: none;
-}
-
-.program__link {
   width: 226px;
   position: relative;
   padding-left: 20px;
@@ -127,4 +121,23 @@
   background-repeat: no-repeat;
   bottom: 5px;
   left: 120px;
+}
+
+@media (min-width: $tablet-width) {
+  .program{
+    display: block;
+  }
+
+  .program__title {
+    @include text(60px, 60px, none, black);
+    text-align: start;
+    width: 420px;
+    padding-left: 117px;
+  }
+
+  .program__slogan {
+    @include text(20px, 20px, uppercase, black);
+    text-align: start;
+    padding-left: 117px;
+  }
 }

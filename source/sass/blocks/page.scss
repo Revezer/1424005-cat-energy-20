@@ -8,3 +8,9 @@
   width: 320px;
   margin: auto;
 }
+
+@media (min-width: $tablet-width) {
+  .page__body{
+    width: 768px;
+  }
+}
