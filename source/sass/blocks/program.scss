@@ -140,4 +140,13 @@
     text-align: start;
     padding-left: 117px;
   }
+
+  .program__title--background::before {
+    background-image: none;
+    background-color: white;
+  }
+
+  .program__button {
+    margin-left: 117px;
+  }
 }
