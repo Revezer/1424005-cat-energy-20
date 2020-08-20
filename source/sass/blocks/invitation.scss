@@ -17,3 +17,16 @@
   @include arial;
   @include text(14px, 20px, none, $dark-grey);
 }
+
+@media (min-width: $tablet-width) {
+  .invitation__title {
+    @include text-media(20px, 21px);
+    width: 171px;
+  }
+
+  .invitation__text {
+    @include text-media(16px, 20px);
+    white-space: pre-line;
+    text-align: end;
+  }
+}

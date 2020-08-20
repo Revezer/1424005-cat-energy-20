@@ -18,3 +18,12 @@
 .page-footer__social {
   width: 280px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

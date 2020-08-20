@@ -17,3 +17,9 @@
   height: 34px;
   background-repeat: no-repeat;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 163px;
+  }
+}

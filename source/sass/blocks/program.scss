@@ -124,7 +124,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .program{
+  .program {
     display: block;
   }
 
@@ -147,6 +147,44 @@
   }
 
   .program__button {
+    @include text(20px, 0, uppercase, white);
     margin-left: 117px;
+    width: 244px;
+    height: 54px;
+  }
+
+  .program__item {
+    width: 708px;
+    height: 372px;
+  }
+
+  .program__title-item {
+    @include text(36px, 36px, uppercase, black);
+  }
+
+  .program__title-item--slim::before {
+    background-image: url("../../img/cat_back-tablet.svg");
+    width: 200px;
+    height: 211px;
+    right: 80px;
+    top: 1px;
+  }
+
+  .program__title-item--pro::before {
+    background-image: url("../../img/cat_back-pro-tablet.svg");
+    width: 268px;
+    height: 200px;
+    right: 80px;
+    top: 1px;
+  }
+
+  .program__text {
+    @include text(16px, 24px, none, black);
+    border: none;
+    width: 380px;
+  }
+
+  .program__link {
+    @include text(20px,30px, uppercase, black);
   }
 }
