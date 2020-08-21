@@ -126,6 +126,7 @@
 @media (min-width: $tablet-width) {
   .program {
     display: block;
+    position: relative;
   }
 
   .program__title {
@@ -139,6 +140,13 @@
     @include text(20px, 20px, uppercase, black);
     text-align: start;
     padding-left: 117px;
+  }
+
+  .program__picture {
+    position: absolute;
+    top: 204px;
+    z-index: -1;
+    right: 312px;
   }
 
   .program__title--background::before {
@@ -186,5 +194,18 @@
 
   .program__link {
     @include text(20px,30px, uppercase, black);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .program__item {
+    width: 570px;
+    margin: 0;
   }
 }

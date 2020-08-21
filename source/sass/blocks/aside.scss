@@ -101,3 +101,13 @@
     @include text-media(20px, 30px);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .aside {
+    display: flex;
+  }
+
+  .aside__block {
+    display: block;
+  }
+}

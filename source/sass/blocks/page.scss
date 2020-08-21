@@ -14,3 +14,9 @@
     width: 768px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    width: 1220px;
+  }
+}
