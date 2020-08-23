@@ -61,3 +61,25 @@
   margin-top: 13px;
   margin-bottom: 25px;
 }
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 430px 430px;
+    row-gap: 140px;
+  }
+
+  .product__item {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: 430px 430px 430px 430px;
+  }
+}

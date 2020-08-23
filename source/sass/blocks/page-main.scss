@@ -47,7 +47,7 @@
 }
 
 .page-main__info {
-  width: 320px;
+  width: 300px;
   margin-left: 20px;
 }
 
@@ -65,7 +65,16 @@
 
 @media (min-width: $tablet-width) {
   .page-main__info {
-    width: 768px;
+    width: 720px;
     margin-left: 30px;
+  }
+
+  .page-main__title {
+    border: none;
+  }
+
+  .page-main__invitation {
+    padding-left: 71px;
+    padding-right: 72px;
   }
 }

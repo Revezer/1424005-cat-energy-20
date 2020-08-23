@@ -22,12 +22,15 @@
   .invitation__title {
     @include text-media(20px, 21px);
     width: 171px;
+    margin-top: 66px;
+    margin-bottom: 51px;
   }
 
   .invitation__text {
     @include text-media(16px, 20px);
     white-space: pre-line;
     text-align: end;
+    margin-top: 62px;
   }
 }
 

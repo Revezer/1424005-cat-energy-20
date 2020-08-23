@@ -58,3 +58,15 @@
   text-decoration: none;
   margin-bottom: 19px;
 }
+
+@media (min-width: $tablet-width) {
+  .additional-product__items {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-product__item {
+    display: flex;
+  }
+}
