@@ -2,3 +2,18 @@
   margin: 0;
   padding: 0;
 }
+
+.main-nav__toggle {
+  position: absolute;
+  top: 1px;
+  right: 93px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
