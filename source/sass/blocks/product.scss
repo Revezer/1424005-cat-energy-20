@@ -50,7 +50,7 @@
 
 .product__link {
   @include oswald;
-  @include text(16px, 0, none, white);
+  @include text(16px, 0, uppercase, white);
   width: 280px;
   height: 40px;
   background-color: $green;
@@ -62,18 +62,112 @@
   margin-bottom: 25px;
 }
 
+.product__dropdown {
+  text-align: center;
+  border-bottom: 1px solid $grey-2;
+}
+
+.product__dropdown-subtitle {
+  @include oswald;
+  @include text(16px, 20px, uppercase, #111111);
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 79px;
+  margin-bottom: 8px;
+}
+
+.product__dropdown-subtitle::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/plus.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 43px;
+  left: 145px;
+}
+
+.product__dropdown-text {
+  @include arial;
+  @include text(12px, 16px, none, $dark-grey);
+  margin: 0;
+  margin-bottom: 21px;
+}
+
+.product__dropdown-link {
+  @include oswald;
+  @include text(16px, 0, uppercase, $dark-grey);
+  width: 279px;
+  height: 40px;
+  background-color: $grey;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .product {
     display: grid;
     grid-template-columns: 324px 324px;
     grid-template-rows: 430px 430px;
     row-gap: 140px;
+    column-gap: 60px;
+    padding-left: 30px;
+  }
+
+  .product__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .product__item {
     margin: 0;
     padding: 0;
     border: none;
+  }
+
+  .product__subtitle {
+    @include text-media(20px, 24px);
+    width: 150px;
+    text-align: center;
+    margin-left: 47px;
+  }
+
+  .product__container-text {
+    width: 247px;
+  }
+
+  .product__text {
+    @include text-media(16px, 16px);
+    margin-bottom: 14px;
+  }
+
+  .product__link {
+    margin-top: 33px;
+    margin-left: 22px;
+  }
+
+  .product__dropdown {
+    border: none;
+  }
+
+  .product__dropdown-subtitle {
+    @include text-media(20px, 22px);
+    width: 135px;
+    padding-left: 93px;
+    margin-top: 147px;
+    margin-bottom: 23px;
+  }
+
+  .product__dropdown-text {
+    @include text-media(16px, 18px);
+    width: 157px;
+    margin-bottom: 87px;
   }
 }
 
