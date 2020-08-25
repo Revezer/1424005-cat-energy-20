@@ -130,4 +130,10 @@
   .additional-product__item {
     display: flex;
   }
+
+  .additional-product__conteiner {
+    display: grid;
+    grid-template-columns: 896px 245px;
+    column-gap: 79px;
+  }
 }
