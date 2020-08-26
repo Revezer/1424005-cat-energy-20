@@ -103,7 +103,7 @@
   opacity: 0;
 }
 
-.form__checkbox + label::before {
+.form__checkbox + .form__checkbox-label::before {
   content: "";
   display: inline-block;
   width: 25px;
@@ -114,7 +114,7 @@
   left: -46px;
 }
 
-.form__checkbox:checked + label::before {
+.form__checkbox:checked + .form__checkbox-label::before {
   background-image: url("../../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
