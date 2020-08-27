@@ -1,6 +1,8 @@
 .info__title {
   @include oswald;
   @include text(38px, 40px, none, black);
+  margin-top: 27px;
+  margin-bottom: 38px;
 }
 
 .info__list {
@@ -8,6 +10,7 @@
   list-style: none;
   display: grid;
   gap: 20px;
+  grid-template-columns: 280px;
 }
 
 .info__item {
@@ -15,7 +18,6 @@
   @include text(14px, 18px, none, $dark-grey);
   padding-left: 80px;
   position: relative;
-  width: 205px;
 }
 
 .info__item::before {
@@ -44,4 +46,72 @@
 
 .info__item--icon-clock::before {
   background-image: url("../../img/clock.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .info__title {
+    @include text(60px, 60px, none, black);
+    margin-top: 45px;
+    margin-bottom: 32px;
+  }
+
+  .info__list {
+    grid-template-columns: 354px 354px;
+    grid-template-rows: 280px 280px;
+    width: 650px;
+  }
+
+  .info__item {
+    @include text(16px, 24px, none, $dark-grey);
+    padding: 0;
+    padding-top: 151px;
+    width: 201px;
+  }
+
+  .info__item::before {
+    width: 80px;
+    height: 80px;
+    right: 121px;
+    top: 46px;
+    background-position: center center;
+  }
+
+  .info__item::after {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 124px;
+    top: 43px;
+    height: 280px;
+    z-index: -1;
+  }
+
+  .info__item--icon-leaf::after {
+    background-image: url("../../img/number-one.svg");
+    width: 112px;
+  }
+
+  .info__item--icon-powder::after {
+    background-image: url("../../img/number-two.svg");
+    width: 134px;
+  }
+
+  .info__item--icon-dining::after {
+    background-image: url("../../img/number-three.svg");
+    width: 138px;
+  }
+
+  .info__item--icon-clock::after {
+    background-image: url("../../img/number-four.svg");
+    width: 136px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
 }

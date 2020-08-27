@@ -16,3 +16,17 @@
 .site-list__item--border {
   border-bottom: 1px solid #e6e6e6;
 }
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    width: 440px;
+    padding-left: 107px;
+    justify-content: space-between;
+  }
+
+  .site-list__item {
+    @include text-media(18px, 24px);
+    border: none;
+  }
+}

@@ -40,3 +40,9 @@
   width: 22px;
   height: 22px;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
+}

@@ -1,0 +1,32 @@
+.page-header__img {
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.page-header__toggle {
+  width: 40px;
+  height: 40px;
+  border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+  }
+
+  .page-header__img {
+    margin-left: 30px;
+    margin-top: 25px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__img {
+    margin-top: 54px;
+    margin-left: 110px;
+  }
+}

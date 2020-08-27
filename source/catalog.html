@@ -10,11 +10,10 @@
   <body class="page__body">
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="https://via.placeholder.com/150x150" width="33" height="37" alt="Кэт Энерджи">
-        <img src="https://via.placeholder.com/150x150" width="101" height="18" alt="Кэт Энерджи">
+        <img class="page-header__img" src="img/cat_energy-mobile.svg" width="191" height="38" alt="Кэт Энерджи">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="page-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
@@ -44,7 +43,7 @@
               </a>
               <div class="product__container-text">
                 <div class="product__item-text">
-                  <span class="product__text">Объем</span>
+                  <span class="product__text">Масса</span>
                   <span class="product__text">Вкус</span>
                   <span class="product__text">Цена</span>
                 </div>
@@ -69,7 +68,7 @@
               </a>
               <div class="product__container-text">
                 <div class="product__item-text">
-                  <span class="product__text">Объем</span>
+                  <span class="product__text">Масса</span>
                   <span class="product__text">Вкус</span>
                   <span class="product__text">Цена</span>
                 </div>
@@ -94,7 +93,7 @@
               </a>
               <div class="product__container-text">
                 <div class="product__item-text">
-                  <span class="product__text">Объем</span>
+                  <span class="product__text">Масса</span>
                   <span class="product__text">Вкус</span>
                   <span class="product__text">Цена</span>
                 </div>
@@ -119,7 +118,7 @@
               </a>
               <div class="product__container-text">
                 <div class="product__item-text">
-                  <span class="product__text">Объем</span>
+                  <span class="product__text">Масса</span>
                   <span class="product__text">Вкус</span>
                   <span class="product__text">Цена</span>
                 </div>
@@ -144,7 +143,7 @@
               </a>
               <div class="product__container-text">
                 <div class="product__item-text">
-                  <span class="product__text">Объем</span>
+                  <span class="product__text">Масса</span>
                   <span class="product__text">Вкус</span>
                   <span class="product__text">Цена</span>
                 </div>
@@ -169,7 +168,7 @@
               </a>
               <div class="product__container-text">
                 <div class="product__item-text">
-                  <span class="product__text">Объем</span>
+                  <span class="product__text">Масса</span>
                   <span class="product__text">Вкус</span>
                   <span class="product__text">Цена</span>
                 </div>
@@ -194,7 +193,7 @@
               </a>
               <div class="product__container-text">
                 <div class="product__item-text">
-                  <span class="product__text">Объем</span>
+                  <span class="product__text">Масса</span>
                   <span class="product__text">Вкус</span>
                   <span class="product__text">Цена</span>
                 </div>
@@ -208,54 +207,64 @@
           </div>
           <a class="product__link" href="#">Заказать</a>
         </li>
+        <li class="product__dropdown">
+          <h3 class="product__dropdown-subtitle">Показать еще 100500 товаров</h3>
+          <p class="product__dropdown-text">На самом деле вкусов гораздо больше!</p>
+          <a class="product__dropdown-link" href="#">Показать все</a>
+        </li>
       </ul>
-      <section class="page-main__dropdown dropdown">
-        <h3 class="dropdown__subtitle">Показать еще 100500 товаров</h3>
-        <p class="dropdown__text">На самом деле вкусов гораздо больше!</p>
-        <a class="dropdown__link" href="#">Показать все</a>
-      </section>
       <section class="additional-product page-main__additional-product">
         <h3 class="additional-product__title">Дополнительные товары</h3>
-        <ul class="additional-product__list">
-          <li class="additional-product__item">
-            <h3 class="additional-product__item-title">Сахарозаменитель</h3>
-            <div class="additional-product__item-text">
-              <span class="additional-product__text">1 упаковка (100 г)</span>
-              <span class="additional-product__text">200 Р.</span>
-            </div>
-            <a class="additional-product__link" href="#">Заказать</a>
-          </li>
-          <li class="additional-product__item">
-            <h3 class="additional-product__item-title">Питьевая вода</h3>
-            <div class="additional-product__item-text">
-              <span class="additional-product__text">5 литров</span>
-              <span class="additional-product__text">50 Р.</span>
-            </div>
-            <a class="additional-product__link" href="#">Заказать</a>
-          </li>
-          <li class="additional-product__item">
-            <h3 class="additional-product__item-title">Молоко</h3>
-            <div class="additional-product__item-text">
-              <span class="additional-product__text">1 литр</span>
-              <span class="additional-product__text">100 Р.</span>
-            </div>
-            <a class="additional-product__link" href="#">Заказать</a>
-          </li>
-          <li class="additional-product__item">
-            <h3 class="additional-product__item-title">Витамины</h3>
-            <div class="additional-product__item-text">
-              <span class="additional-product__text">1 упаковка (30 г)</span>
-              <span class="additional-product__text">300 Р.</span>
-            </div>
-            <a class="additional-product__link" href="#">Заказать</a>
-          </li>
-        </ul>
-      </section>
-      <section class="present page-main__present">
-        <img class="present__img" src="img/icon_gift.svg" width="78" height="80" alt="Подарок">
-        <p class="present__text">Закажите все
-          и получите чехол для
-          кота в подарок!</p>
+        <div class="additional-product__conteiner">
+          <ul class="additional-product__list">
+            <li class="additional-product__item">
+              <div class="additional-product__items">
+                <h3 class="additional-product__item-title">Сахарозаменитель</h3>
+                <div class="additional-product__item-text">
+                  <span class="additional-product__text additional-product__text--width">1 упаковка (100 г)</span>
+                  <span class="additional-product__text  additional-product__text--padding">200 Р.</span>
+                </div>
+              </div>
+              <a class="additional-product__link" href="#">Заказать</a>
+            </li>
+            <li class="additional-product__item">
+              <div class="additional-product__items">
+                <h3 class="additional-product__item-title">Питьевая вода</h3>
+                <div class="additional-product__item-text">
+                  <span class="additional-product__text additional-product__text--width">5 литров</span>
+                  <span class="additional-product__text  additional-product__text--padding">50 Р.</span>
+                </div>
+              </div>
+              <a class="additional-product__link" href="#">Заказать</a>
+            </li>
+            <li class="additional-product__item">
+              <div class="additional-product__items">
+                <h3 class="additional-product__item-title">Молоко</h3>
+                <div class="additional-product__item-text">
+                  <span class="additional-product__text additional-product__text--width">1 литр</span>
+                  <span class="additional-product__text  additional-product__text--padding">100 Р.</span>
+                </div>
+              </div>
+              <a class="additional-product__link" href="#">Заказать</a>
+            </li>
+            <li class="additional-product__item additional-product__item--border">
+              <div class="additional-product__items">
+                <h3 class="additional-product__item-title">Витамины</h3>
+                <div class="additional-product__item-text">
+                  <span class="additional-product__text additional-product__text--width">1 упаковка (30 г)</span>
+                  <span class="additional-product__text additional-product__text--padding">300 Р.</span>
+                </div>
+              </div>
+              <a class="additional-product__link" href="#">Заказать</a>
+            </li>
+          </ul>
+          <div class="present page-main__present">
+            <img class="present__img" src="img/icon_gift.svg" width="78" height="80" alt="Подарок">
+            <p class="present__text">Закажите все
+              и получите чехол для
+              кота в подарок!</p>
+          </div>
+        </div>
       </section>
       <section class="invitation page-main__invitation">
         <h3 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h3>

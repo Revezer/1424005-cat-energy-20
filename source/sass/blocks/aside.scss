@@ -57,3 +57,61 @@
   @include oswald;
   @include text(16px, 20px, uppercase, black);
 }
+
+@media (min-width: $tablet-width) {
+  .aside {
+    background: none;
+    border-top: 1px solid #d9d9d9;
+  }
+
+  .aside__title {
+    @include text-media(60px, 60px);
+    padding-left: 30px;
+  }
+
+  .aside__text {
+    @include text-media(16px, 24px);
+    width: 700px;
+  }
+
+  .aside__block {
+    display: flex;
+  }
+
+  .aside__item {
+    width: 366px;
+  }
+
+  .aside__info {
+    @include text-media(30px, 37px);
+    margin-top: 69px;
+  }
+
+  .aside__content {
+    @include text-media(14px, 14px);
+    white-space: normal;
+  }
+
+  .aside__text-info {
+    @include text-media(20px, 20px);
+    width: 175px;
+    text-align: end;
+    padding-left: 197px;
+    margin-top: 65px;
+  }
+
+  .aside__text-switching {
+    @include text-media(20px, 30px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .aside {
+    display: flex;
+    border: none;
+  }
+
+  .aside__block {
+    display: block;
+  }
+}
