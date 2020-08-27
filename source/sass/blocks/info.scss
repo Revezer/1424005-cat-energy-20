@@ -56,9 +56,10 @@
   }
 
   .info__list {
-    grid-template-columns: 354px 354px;
+    grid-template-columns: 247px 247px;
     grid-template-rows: 280px 280px;
-    width: 650px;
+    column-gap: 137px;
+    row-gap: 37px;
   }
 
   .info__item {
@@ -72,7 +73,7 @@
     width: 80px;
     height: 80px;
     right: 121px;
-    top: 46px;
+    top: 40px;
     background-position: center center;
   }
 
@@ -82,7 +83,7 @@
     background-repeat: no-repeat;
     position: absolute;
     left: 124px;
-    top: 43px;
+    top: 40px;
     height: 280px;
     z-index: -1;
   }
@@ -105,6 +106,12 @@
   .info__item--icon-clock::after {
     background-image: url("../../img/number-four.svg");
     width: 136px;
+  }
+
+  .info__text {
+    display: block;
+    width: 245px;
+    white-space: pre-line;
   }
 }
 
