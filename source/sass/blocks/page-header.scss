@@ -1,3 +1,7 @@
+.page-header {
+  margin-top: 12px;
+}
+
 .page-header__img {
   margin-top: 12px;
   margin-left: 20px;
@@ -12,6 +16,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
+    margin-top: 24px;
   }
 
   .page-header__img {
@@ -25,6 +30,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    margin-top: 54px;
+  }
+
   .page-header__img {
     margin-top: 54px;
     margin-left: 110px;
