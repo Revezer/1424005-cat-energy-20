@@ -45,7 +45,7 @@
   align-items: center;
   width: 280px;
   height: 40px;
-  margin-top: 3px;
+  margin-top: 2px;
 }
 
 .program__item {
@@ -58,9 +58,10 @@
   @include oswald;
   @include text(24px, 37px, uppercase, black);
   position: relative;
-  margin-top: 30px;
   margin-bottom: 30px;
   padding-left: 90px;
+  margin-top: 0;
+  padding-top: 30px;
 }
 
 .program__title-item::before {
