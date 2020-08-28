@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link link rel="preload" href="fonts/oswaldregular.woff2" rel="stylesheet">
+    <link link rel="preload" href="fonts/oswaldregular.woff" rel="stylesheet">
+    <link link rel="preload" href="fonts/oswaldmedium.woff2" rel="stylesheet">
+    <link link rel="preload" href="fonts/oswaldmedium.woff" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -77,17 +80,20 @@
           <div class="aside__block">
             <div class="aside__item">
               <div class="aside__content-info">
-                <h3 class="aside__info">5 кг</h3>
-                <p class="aside__content">Снижение
+                <h3 class="aside__info aside__info--margin">5 кг</h3>
+                <p class="aside__content">снижение
                   веса</p>
               </div>
               <div class="aside__content-info">
-                <h3 class="aside__info">60 дней</h3>
-                <p class="aside__content">Затрачено
+                <h3 class="aside__info aside__info--padding">60 дней</h3>
+                <p class="aside__content">затрачено
                   времени</p>
               </div>
             </div>
-            <p class="aside__text-info">Затраты на питание: 15 000 руб.</p>
+            <div class="aside__container-text">
+              <p class="aside__text-info aside__text-info--margin-bottom">Затраты на питание:</p>
+              <p class="aside__text-info aside__text-info--margin-top">15 000 руб.</p>
+            </div>
           </div>
         </div>
         <div>
