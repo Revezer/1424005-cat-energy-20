@@ -147,3 +147,33 @@
   margin-top: 21px;
   margin-bottom: 32px;
 }
+
+@media (min-width: $tablet-width) {
+  .form__list-checkbox {
+    display: grid;
+    grid-template-rows: 30px 30px;
+    grid-template-columns: 161px 161px;
+    row-gap: 32px;
+    column-gap: 182px;
+  }
+
+  .form__container {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__list-checkbox {
+    grid-template-rows: none;
+    grid-template-columns: 161px 161px 161px 161px;
+    column-gap: 163px;
+  }
+
+  .form__div-container {
+    display: flex;
+  }
+
+  .form__container-label {
+    display: flex;
+  }
+}

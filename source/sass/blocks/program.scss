@@ -134,13 +134,15 @@
     width: 420px;
     padding-left: 117px;
     padding-bottom: 40px;
+    padding-top: 51px;
   }
 
   .program__slogan {
     @include text(20px, 20px, uppercase, black);
     text-align: start;
-    padding-left: 117px;
     padding-bottom: 46px;
+    padding-top: 3px;
+    padding-left: 118px;
   }
 
   .program__picture {
@@ -157,7 +159,7 @@
 
   .program__button {
     @include text(20px, 0, uppercase, white);
-    margin-left: 117px;
+    margin-left: 113px;
     width: 244px;
     height: 54px;
     margin-bottom: 540px;
@@ -171,23 +173,24 @@
 
   .program__title-item {
     @include text(36px, 36px, uppercase, black);
-    padding-top: 77px;
-    margin-bottom: 24px;
+    padding-top: 76px;
+    margin-bottom: 26px;
+    padding-left: 53px;
   }
 
   .program__title-item--slim::before {
     background-image: url("../../img/cat_back-tablet.svg");
     width: 200px;
     height: 211px;
-    right: 92px;
-    top: 77px;
+    right: 63px;
+    top: 81px;
   }
 
   .program__title-item--pro::before {
     background-image: url("../../img/cat_back-pro-tablet.svg");
     width: 268px;
     height: 200px;
-    right: 62px;
+    right: 28px;
     top: 92px;
   }
 
@@ -195,6 +198,8 @@
     @include text(16px, 24px, none, black);
     border: none;
     width: 380px;
+    margin-left: 52px;
+    margin-bottom: 29px;
   }
 
   .program__text--size {
@@ -203,11 +208,16 @@
 
   .program__link {
     @include text(20px,30px, uppercase, black);
+    margin-left: 32px;
   }
 
   .program__link::after {
     bottom: 9px;
-    left: 147px;
+    left: 153px;
+  }
+
+  .program__link--pro::after {
+    left: 149px;
   }
 }
 
