@@ -37,5 +37,19 @@
 @media (min-width: $desktop-width) {
   .invitation {
     width: 570px;
+    padding-left: 31px;
+    padding-top: 96px;
+  }
+
+  .invitation__title {
+    padding-left: 75px;
+    white-space: pre-line;
+    line-height: 24px;
+  }
+
+  .invitation__text {
+    text-align: start;
+    padding-left: 40px;
+    font-size: 16px;
   }
 }
