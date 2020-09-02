@@ -11,6 +11,7 @@
 .invitation__title {
   @include oswald;
   @include text(16px, 18px, uppercase, black);
+  white-space: pre-line;
 }
 
 .invitation__text {
