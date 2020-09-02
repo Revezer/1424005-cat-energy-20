@@ -118,8 +118,8 @@
 
 @media (min-width: $desktop-width) {
   .info__list {
-    display: flex;
-    justify-content: space-between;
-    width: 1220px;
+    grid-template-columns: 247px 247px 247px 247px;
+    grid-template-rows: auto;
+    column-gap: 78px;
   }
 }

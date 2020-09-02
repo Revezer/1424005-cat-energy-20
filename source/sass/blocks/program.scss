@@ -109,7 +109,7 @@
 
 .program__item--margin {
   margin-top: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .program__link::after {
@@ -223,10 +223,27 @@
 }
 
 @media (min-width: $desktop-width) {
+  .program__title {
+    padding-top: 100px;
+    padding-left: 190px;
+  }
+
+  .program__slogan {
+    padding-left: 190px;
+    padding-top: 1px;
+  }
+
+  .program__button {
+    margin-left: 190px;
+    margin-top: 7px;
+    margin-bottom: 266px;
+  }
+
   .program__items {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    width: 1300px;
+    margin-left: 110px;
   }
 
   .program__item {
@@ -234,10 +251,14 @@
     margin: 0;
   }
 
+  .program__item--margin {
+    margin-right: 80px;
+  }
+
   .program__title-item {
     padding-left: 214px;
     margin-top: 0;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
   }
 
   .program__title-item--slim::before {
@@ -257,7 +278,8 @@
   }
 
   .program__text {
-    padding-bottom: 23px;
+    padding-bottom: 27px;
     margin-bottom: 0;
+    width: 464px;
   }
 }

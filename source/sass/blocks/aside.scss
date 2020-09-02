@@ -124,12 +124,12 @@
 
   .aside__info {
     @include text-media(30px, 37px);
-    margin-top: 69px;
+    margin-top: 53px;
     margin-bottom: 11px;
   }
 
   .aside__info--margin {
-    padding-left: 87px;
+    padding-left: 78px;
     width: 48px;
   }
 
@@ -141,11 +141,11 @@
   .aside__info::before {
     width: 162px;
     height: 72px;
-    top: 54px;
+    top: 37px;
   }
 
   .aside__info--margin::before {
-    left: 30px;
+    left: 21px;
     background-image: url("../../img/weight-back.svg");
   }
 
@@ -159,7 +159,11 @@
     white-space: normal;
     width: 129px;
     margin-top: 0;
-    margin-left: 61px;
+    margin-left: 53px;
+  }
+
+  .aside__content--margin {
+    margin-left: 60px;
   }
 
   .aside__container-text {
@@ -221,5 +225,26 @@
   .aside__text-info--margin-top {
     padding-left: 64px;
     text-align: start;
+  }
+
+  .aside__info {
+    padding-left: 87px;
+    margin-top: 69px;
+  }
+
+  .aside__info--padding {
+    padding-left: 75px;
+  }
+
+  .aside__info::before {
+    top: 54px;
+  }
+
+  .aside__info--margin::before {
+    left: 30px;
+  }
+
+  .aside__content {
+    margin-left: 61px;
   }
 }

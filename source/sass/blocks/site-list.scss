@@ -32,3 +32,10 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    @include text-media(20px, 30px);
+    color: white;
+  }
+}
