@@ -40,6 +40,9 @@
 @media (min-width: $desktop-width) {
   .site-list__item {
     @include text-media(20px, 30px);
+  }
+
+  .site-list__item--color {
     color: white;
   }
 }

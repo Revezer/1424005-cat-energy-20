@@ -37,7 +37,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--form">
       <h1 class="page-main__title-text">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post" name="form">
@@ -48,12 +48,12 @@
               <input class="form__input" type="text" name="name" placeholder="Барсик" required />
             </label>
             <label class="form__label">
-              <span class="form__text">Вес (кг):*</span>
-              <input class="form__input" type="number" name="weight" placeholder="7" required />
+              <span class="form__text form__text--weight-width">Вес (кг):*</span>
+              <input class="form__input form__input--width" type="number" name="weight" placeholder="7" required />
             </label>
             <label class="form__label">
-              <span class="form__text">Возраст (лет):</span>
-              <input class="form__input" type="number" name="age" placeholder="7" />
+              <span class="form__text form__text--age-width">Возраст (лет):</span>
+              <input class="form__input form__input--width2" type="number" name="age" placeholder="7" />
             </label>
           </fieldset>
           <ul class="form__list">
@@ -82,17 +82,17 @@
           <div class="form__container-label">
             <label class="form__label">
               <span class="form__text">E-mail:*</span>
-              <input class="form__input" type="email" name="email" placeholder="Kuklachev@gmail.com" required />
+              <input class="form__input form__input--width-email" type="email" name="email" placeholder="Kuklachev@gmail.com" required />
             </label>
-            <label class="form__label">
+            <label class="form__label form__label--padding-number">
               <span class="form__text">Телефон:*</span>
-              <input class="form__input" type="number" name="number" placeholder="8 (960) 900-60-90" required />
+              <input class="form__input form__input--width-number" type="number" name="number" placeholder="8 (960) 900-60-90" required />
             </label>
           </div>
         </fieldset>
-        <fieldset class="form__fieldset">
+        <fieldset class="form__fieldset form__fieldset--comment">
           <legend class="form__legend">Комментарий</legend>
-          <textarea class="form__input form__input--size" name="comment" placeholder="Раскажите обо всех повадках кота"></textarea>
+          <textarea class="form__input form__input--size" name="comment" placeholder="Расcкажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend form__fieldset--margin">Дополнительно</legend>
@@ -128,10 +128,10 @@
           <span class="form__text-item">* — Обязательные поля</span>
         </div>
       </form>
-      <section class="invitation page-main__invitation">
-        <h3 class="invitation__title">Приглашаем
+      <section class="invitation page-main__invitation page-main__invitation--form">
+        <h3 class="invitation__title invitation__title--form">Приглашаем
           к сотрудничеству дилеров!</h3>
-        <p class="invitation__text">ул. Большая
+        <p class="invitation__text invitation__text--form">ул. Большая
           Конюшенная, д. 19/8
 
           Санкт-Петербург</p>
