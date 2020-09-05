@@ -217,8 +217,13 @@
 @media (min-width: $desktop-width) {
   .product {
     grid-template-columns: 245px 245px 245px 245px;
-    grid-template-rows: 430px 430px;
+    grid-template-rows: 432px 432px;
     column-gap: 80px;
+    padding-left: 0;
+  }
+
+  .product__item {
+    height: 432px;
   }
 
   .product__item-text {

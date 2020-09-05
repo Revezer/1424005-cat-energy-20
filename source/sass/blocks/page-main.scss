@@ -116,12 +116,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main--catalog {
-    padding-left: 110px;
-  }
-
   .page-main__title {
     padding-top: 71px;
+    padding-left: 0;
+    padding-bottom: 167px;
   }
 
   .page-main__additional-product {
