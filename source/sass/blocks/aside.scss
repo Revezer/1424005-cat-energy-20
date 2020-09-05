@@ -23,8 +23,8 @@
 .aside__item {
   display: flex;
   justify-content: space-around;
-  padding-top: 17px;
-  padding-left: 9px;
+  padding-top: 16px;
+  padding-left: 10px;
 }
 
 .aside__content-info {
@@ -81,7 +81,6 @@
 
 .aside__item-switching {
   display: flex;
-  justify-content: space-around;
   padding-top: 27px;
   padding-bottom: 31px;
 }
@@ -89,6 +88,29 @@
 .aside__text-switching {
   @include oswald;
   @include text(16px, 20px, uppercase, black);
+  padding-top: 2px;
+  padding-left: 64px;
+}
+
+.aside__text-switching--position {
+  padding-left: 119px;
+  padding-top: 2px;
+}
+
+.aside__switching {
+  position: relative;
+}
+
+.aside__switching::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 84px;
+  height: 14px;
+  top: 4px;
+  left: 18px;
+  background-image: url("../../img/slider.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -100,7 +122,7 @@
   .aside__title {
     @include text-media(60px, 60px);
     padding-left: 30px;
-    padding-top: 42px;
+    padding-top: 38px;
   }
 
   .aside__text {
@@ -112,6 +134,7 @@
 
   .aside__block {
     display: flex;
+    margin-bottom: 224px;
   }
 
   .aside__item {
@@ -186,6 +209,28 @@
     margin-top: 9px;
   }
 
+  .aside__container-switching {
+    height: 462px;
+    background-color: #eaeaea;
+  }
+
+  .aside__item-switching {
+    padding-top: 359px;
+    padding-left: 33px;
+  }
+
+  .aside__text-switching--position {
+    padding-left: 472px;
+  }
+
+  .aside__switching::before {
+    background-image: url("../../img/slider-tablet.svg");
+    width: 428px;
+    height: 40px;
+    top: -1px;
+    left: 25px;
+  }
+
   .aside__text-switching {
     @include text-media(20px, 30px);
   }
@@ -197,28 +242,36 @@
     border: none;
   }
 
+  .aside__title {
+    padding-left: 0;
+  }
+
   .aside__block {
     display: block;
+    margin-bottom: 0;
   }
 
   .aside__text {
     width: 435px;
     padding-top: 115px;
+    padding-left: 0;
   }
 
   .aside__item {
-    padding-top: 15px;
+    padding-top: 12px;
     padding-left: 0;
     justify-content: start;
+    margin-left: -30px;
   }
 
   .aside__container-text {
     display: flex;
     padding-left: 0;
+    margin-left: -1px;
   }
 
   .aside__text-info {
-    padding-left: 28px;
+    padding-left: 0;
     margin-top: 42px;
   }
 
@@ -246,5 +299,29 @@
 
   .aside__content {
     margin-left: 61px;
+  }
+
+  .aside__container-switching {
+    margin-left: 117px;
+    margin-top: 174px;
+    background: none;
+    position: relative;
+  }
+
+  .aside__container-switching::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1440px;
+    height: 656px;
+    background-image: url("../../img/cat-switch.png");
+    top: -195px;
+    right: -111px;
+    z-index: -1;
+  }
+
+  .aside__img {
+    display: none;
   }
 }

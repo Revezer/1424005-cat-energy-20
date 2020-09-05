@@ -1,6 +1,6 @@
 .info__title {
   @include oswald;
-  @include text(38px, 40px, none, black);
+  @include text(36px, 40px, none, black);
   margin-top: 27px;
   margin-bottom: 38px;
 }
@@ -9,8 +9,10 @@
   padding: 0;
   list-style: none;
   display: grid;
-  gap: 20px;
+  gap: 26px;
   grid-template-columns: 280px;
+  margin-top: 42px;
+  padding-bottom: 5px;
 }
 
 .info__item {
@@ -28,7 +30,7 @@
   background-color: $green;
   background-repeat: no-repeat;
   position: absolute;
-  right: 225px;
+  right: 219px;
   top: -3px;
 }
 
@@ -61,6 +63,7 @@
     column-gap: 137px;
     row-gap: 37px;
     margin-bottom: 46px;
+    margin-top: 33px;
   }
 
   .info__item {

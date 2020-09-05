@@ -83,7 +83,7 @@
   width: 67px;
   height: 50px;
   background-image: url("../../img/cat_back-pro.svg");
-  right: 205px;
+  right: 200px;
   bottom: -9px;
 }
 
@@ -92,7 +92,7 @@
   @include text(14px, 18px, none, $dark-grey);
   width: 240px;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   margin-left: 20px;
   padding-bottom: 22px;
   border-bottom: 1px solid #d9d9d9;
@@ -109,7 +109,7 @@
 
 .program__item--margin {
   margin-top: 22px;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .program__link::after {
@@ -135,7 +135,7 @@
     width: 420px;
     padding-left: 117px;
     padding-bottom: 40px;
-    padding-top: 51px;
+    padding-top: 53px;
   }
 
   .program__slogan {
@@ -163,7 +163,7 @@
     margin-left: 113px;
     width: 244px;
     height: 54px;
-    margin-bottom: 540px;
+    margin-bottom: 526px;
   }
 
   .program__item {
@@ -224,17 +224,17 @@
 
 @media (min-width: $desktop-width) {
   .program__title {
-    padding-top: 100px;
-    padding-left: 190px;
+    padding-left: 80px;
+    padding-top: 107px;
   }
 
   .program__slogan {
-    padding-left: 190px;
+    padding-left: 80px;
     padding-top: 1px;
   }
 
   .program__button {
-    margin-left: 190px;
+    margin-left: 80px;
     margin-top: 7px;
     margin-bottom: 266px;
   }
@@ -243,7 +243,6 @@
     display: flex;
     flex-direction: row;
     width: 1300px;
-    margin-left: 110px;
   }
 
   .program__item {

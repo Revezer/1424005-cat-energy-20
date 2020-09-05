@@ -3,10 +3,10 @@
   padding: 0;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .main-nav__list {
-    padding-left: 539px;
-    width: 480px;
+    padding-left: 94px;
+    margin-top: -4px;
   }
 }
 
@@ -15,5 +15,6 @@
     padding-left: 540px;
     margin-top: -5px;
     justify-items: normal;
+    width: 480px;
   }
 }
