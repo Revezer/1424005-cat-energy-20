@@ -4,7 +4,7 @@
   flex-direction: column;
   padding: 0;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 19px;
   margin: 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #d9d9d9;
@@ -23,18 +23,34 @@
   margin-right: 13px;
 }
 
+.form__text--age-width {
+  width: 94px;
+}
+
+.form__text--weight-width {
+  margin-right: 16px;
+}
+
 .form__input {
   @include oswald;
   @include text(16px, 18px, uppercase, $dark-grey);
   flex-grow: 1;
   height: 43px;
   padding: 0;
+  padding-left: 15px;
 }
 
 .form__input--size {
-  height: 150px;
-  width: 280px;
   border: 1px solid #e7e7e7;
+  margin-top: 2px;
+  padding-top: 13px;
+  width: 263px;
+  height: 135px;
+}
+
+.form__input--width2 {
+  width: 155px;
+  margin-left: 2px;
 }
 
 .form__list {
@@ -106,7 +122,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 18px;
   padding: 0;
   padding-left: 46px;
   margin: 0;
@@ -183,6 +199,10 @@
     margin-top: 12px;
   }
 
+  .form__text--age-width {
+    width: 476px;
+  }
+
   .form__text--width {
     width: 117px;
   }
@@ -191,7 +211,7 @@
     @include text-media(20px, 30px);
     width: 544px;
     height: 52px;
-    padding-left: 22px;
+    padding-left: 17px;
     margin-left: 3px;
     flex-grow: 0;
   }
@@ -313,14 +333,19 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-bottom: 164px;
+    margin-bottom: 70px;
+  }
+
+  .form__wrap {
+    padding-left: 0;
   }
 
   .form__list-checkbox {
     grid-template-rows: none;
     grid-template-columns: 161px 161px 161px 161px;
     column-gap: 164px;
-    margin-top: 32px;
+    padding-left: 59px;
+    margin-top: 29px;
   }
 
   .form__div-container {
@@ -354,14 +379,18 @@
 
   .form__fieldset {
     margin-top: 0;
+    padding-left: 0;
   }
 
   .form__legend {
     margin-top: 22px;
+    margin-left: 0;
+    padding-bottom: 34px;
   }
 
   .form__label {
     width: 568px;
+    padding-left: 0;
   }
 
   .form__label--padding-number {
@@ -376,6 +405,10 @@
 
   .form__input--size {
     width: 1198px;
+    margin-left: 1px;
+    margin-top: 44px;
+    padding-top: 8px;
+    padding-left: 17px;
   }
 
   .form__fieldset--margin {
@@ -383,7 +416,7 @@
   }
 
   .form__button {
-    margin-left: 71px;
+    margin-left: 0;
     width: 568px;
   }
 

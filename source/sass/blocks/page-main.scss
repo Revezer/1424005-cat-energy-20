@@ -12,7 +12,7 @@
   @include oswald;
   @include text(36px, 36px, none, black);
   padding-left: 20px;
-  margin-top: 21px;
+  margin-top: 26px;
   margin-bottom: 37px;
 }
 
@@ -144,17 +144,15 @@
   }
 
   .page-main--form {
-    padding-left: 70px;
     padding-top: 18px;
   }
 
   .page-main__title-text {
     margin-top: 53px;
-    padding-left: 70px;
+    padding-left: 0;
   }
 
-  .page-main__invitation--form {
-    margin-left: 70px;
-    width: 427px;
+  .page-main__text {
+    padding-left: 0;
   }
 }
