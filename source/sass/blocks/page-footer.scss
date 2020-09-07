@@ -24,9 +24,6 @@
   .page-footer {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 22px;
   }
 
   .page-footer__social {
@@ -37,11 +34,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    width: 1440px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: -110px;
-    padding-bottom: 32px;
     justify-content: start;
   }
 

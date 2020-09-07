@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link link rel="preload" href="fonts/oswaldregular.woff2" rel="stylesheet">
-    <link link rel="preload" href="fonts/oswaldregular.woff" rel="stylesheet">
-    <link link rel="preload" href="fonts/oswaldmedium.woff2" rel="stylesheet">
-    <link link rel="preload" href="fonts/oswaldmedium.woff" rel="stylesheet">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff2">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header body__page-header">
       <div class="page-header__container">
         <a href="index.html">
           <picture class="page-header__img">
@@ -39,7 +39,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main page-main--form">
+    <main class="page-main body__page-main--form">
       <h1 class="page-main__title-text">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post" name="form">
@@ -55,7 +55,7 @@
             </label>
             <label class="form__label">
               <span class="form__text form__text--age-width">Возраст (лет):</span>
-              <input class="form__input form__input--width2" type="number" name="age" placeholder="7" />
+              <input class="form__input form__input--width-age" type="number" name="age" placeholder="7" />
             </label>
           </fieldset>
           <ul class="form__list">
@@ -83,7 +83,7 @@
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <div class="form__container-label">
             <label class="form__label">
-              <span class="form__text">E-mail:*</span>
+              <span class="form__text form__text--email">E-mail:*</span>
               <input class="form__input form__input--width-email" type="email" name="email" placeholder="Kuklachev@gmail.com" required />
             </label>
             <label class="form__label form__label--padding-number">
@@ -97,7 +97,7 @@
           <textarea class="form__input form__input--size" name="comment" placeholder="Расcкажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend class="form__legend form__fieldset--margin">Дополнительно</legend>
+          <legend class="form__legend form__legend--margin">Дополнительно</legend>
           <ul class="form__list-checkbox">
             <li class="form__item">
               <input type="checkbox" class="form__checkbox" name="checkbox" id="checkbox-sweetener" checked>
@@ -139,10 +139,10 @@
           Санкт-Петербург</p>
       </section>
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6722.607028179332!2d30.319901425461772!3d59.93806539556741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1599297580839!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6722.607028179332!2d30.319901425461772!3d59.93806539556741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1599297580839!5m2!1sru!2sru" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer body__page-footer">
       <img class="page-footer__img" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
       <div class="page-footer__social social">
         <ul class="social__list">

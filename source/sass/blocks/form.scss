@@ -48,7 +48,7 @@
   height: 135px;
 }
 
-.form__input--width2 {
+.form__input--width-age {
   width: 155px;
   margin-left: 2px;
 }
@@ -107,7 +107,7 @@
   margin-top: 13px;
 }
 
-.form__fieldset--margin {
+.form__legend--margin {
   margin-top: 13px;
 }
 
@@ -197,10 +197,11 @@
   .form__text {
     @include text-media(20px, 30px);
     margin-top: 12px;
+    margin-right: 15px;
   }
 
   .form__text--age-width {
-    width: 476px;
+    width: 119px;
   }
 
   .form__text--width {
@@ -218,11 +219,11 @@
 
   .form__input--width {
     margin-left: 6px;
-    width: 513px;
+    width: 515px;
   }
 
-  .form__input--width2 {
-    width: 474px;
+  .form__input--width-age {
+    width: 473px;
   }
 
   .form__list {
@@ -275,6 +276,12 @@
     padding-left: 1px;
   }
 
+  .form__text--email {
+    flex-shrink: 0;
+    width: 67px;
+    margin-right: 10px;
+  }
+
   .form__input--width-email {
     margin-left: 6px;
     width: 527px;
@@ -302,7 +309,7 @@
     height: 163px;
   }
 
-  .form__fieldset--margin {
+  .form__legend--margin {
     margin-top: 52px;
   }
 
@@ -411,7 +418,7 @@
     padding-left: 17px;
   }
 
-  .form__fieldset--margin {
+  .form__legend--margin {
     margin-top: 66px;
   }
 
