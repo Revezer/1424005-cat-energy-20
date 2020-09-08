@@ -44,5 +44,32 @@
 @media (min-width: $tablet-width) {
   .social {
     border: none;
+    justify-content: start;
+  }
+
+  .social__list {
+    width: auto;
+    justify-content: start;
+    align-items: baseline;
+  }
+
+  .social__link--icon-vk {
+    width: 30px;
+    height: 22px;
+    margin-bottom: -4px;
+  }
+
+  .social__link--icon-i {
+    width: 23px;
+    height: 23px;
+    margin-left: 28px;
+    margin-top: 3px;
+  }
+
+  .social__link--icon-fb {
+    width: 13px;
+    height: 27px;
+    margin-left: 29px;
+    margin-bottom: -5px;
   }
 }

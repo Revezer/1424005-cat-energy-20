@@ -2,6 +2,10 @@
   list-style: none;
 }
 
+.site-list__item-li {
+  height: 66px;
+}
+
 .site-list__item {
   @include oswald;
   @include text(20px, 20px, uppercase, $black);
@@ -11,6 +15,7 @@
   padding-bottom: 22px;
   text-align: center;
   border-top: 1px solid #e6e6e6;
+  font-weight: 500;
 }
 
 .site-list__item--border {
@@ -21,13 +26,21 @@
   .site-list {
     display: flex;
     width: 440px;
-    padding-left: 96px;
-    margin-top: -4px;
     justify-content: space-between;
   }
 
   .site-list__item {
     @include text-media(18px, 24px);
     border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    @include text-media(20px, 30px);
+  }
+
+  .site-list__item--color {
+    color: white;
   }
 }

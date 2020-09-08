@@ -2,3 +2,19 @@
   margin: 0;
   padding: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__list {
+    padding-left: 94px;
+    margin-top: -4px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    padding-left: 540px;
+    margin-top: -5px;
+    justify-items: normal;
+    width: 480px;
+  }
+}

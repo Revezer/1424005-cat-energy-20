@@ -23,39 +23,94 @@
 .aside__item {
   display: flex;
   justify-content: space-around;
+  padding-top: 16px;
+  padding-left: 10px;
 }
 
 .aside__content-info {
   text-align: center;
+  position: relative;
 }
 
 .aside__info {
   @include oswald;
   @include text(24px, 24px, uppercase, black);
+  margin-bottom: 0;
+}
+
+.aside__info::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 124px;
+  height: 56px;
+}
+
+.aside__info--margin::before {
+  top: 10px;
+  left: -33px;
+  background-image: url("../../img/weight-back-mobile.svg");
+}
+
+.aside__info--padding::before {
+  top: 10px;
+  left: -21px;
+  background-image: url("../../img/weight-back-day-mobile.svg");
 }
 
 .aside__content {
   @include arial;
   @include text(12px, 12px, none, $dark-grey);
   white-space: pre-line;
+  margin-top: 9px;
+}
+
+.aside__container-text {
+  display: flex;
+  padding-left: 66px;
 }
 
 .aside__text-info {
   @include oswald;
   @include text(14px, 20px, uppercase, black);
-  margin-top: 25px;
+  margin-top: 6px;
   margin-bottom: 42px;
   text-align: center;
 }
 
 .aside__item-switching {
   display: flex;
-  justify-content: space-around;
+  padding-top: 27px;
+  padding-bottom: 31px;
 }
 
 .aside__text-switching {
   @include oswald;
   @include text(16px, 20px, uppercase, black);
+  padding-top: 2px;
+  padding-left: 64px;
+}
+
+.aside__text-switching--position {
+  padding-left: 119px;
+  padding-top: 2px;
+}
+
+.aside__switching {
+  position: relative;
+}
+
+.aside__switching::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 84px;
+  height: 14px;
+  top: 4px;
+  left: 18px;
+  background-image: url("../../img/slider.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -67,37 +122,113 @@
   .aside__title {
     @include text-media(60px, 60px);
     padding-left: 30px;
+    padding-top: 38px;
   }
 
   .aside__text {
     @include text-media(16px, 24px);
     width: 700px;
+    padding-left: 30px;
+    padding-top: 31px;
   }
 
   .aside__block {
     display: flex;
+    margin-bottom: 224px;
   }
 
   .aside__item {
-    width: 366px;
+    justify-content: baseline;
+  }
+
+  .aside__content-info {
+    text-align: start;
   }
 
   .aside__info {
     @include text-media(30px, 37px);
-    margin-top: 69px;
+    margin-top: 53px;
+    margin-bottom: 11px;
+  }
+
+  .aside__info--margin {
+    padding-left: 78px;
+    width: 48px;
+  }
+
+  .aside__info--padding {
+    padding-left: 73px;
+    width: 102px;
+  }
+
+  .aside__info::before {
+    width: 162px;
+    height: 72px;
+    top: 37px;
+  }
+
+  .aside__info--margin::before {
+    left: 21px;
+    background-image: url("../../img/weight-back.svg");
+  }
+
+  .aside__info--padding::before {
+    left: 43px;
+    background-image: url("../../img/weight-back-day.svg");
   }
 
   .aside__content {
     @include text-media(14px, 14px);
     white-space: normal;
+    width: 129px;
+    margin-top: 0;
+    margin-left: 53px;
+  }
+
+  .aside__content--margin {
+    margin-left: 60px;
+  }
+
+  .aside__container-text {
+    display: block;
   }
 
   .aside__text-info {
     @include text-media(20px, 20px);
     width: 175px;
     text-align: end;
-    padding-left: 197px;
+    padding-left: 114px;
     margin-top: 65px;
+  }
+
+  .aside__text-info--margin-bottom {
+    margin-bottom: 0;
+  }
+
+  .aside__text-info--margin-top {
+    margin-top: 9px;
+  }
+
+  .aside__container-switching {
+    height: 462px;
+    background-color: #eaeaea;
+  }
+
+  .aside__item-switching {
+    padding-top: 125px;
+    padding-left: 33px;
+  }
+
+  .aside__text-switching--position {
+    padding-left: 472px;
+  }
+
+  .aside__switching::before {
+    background-image: url("../../img/slider-tablet.svg");
+    width: 428px;
+    height: 40px;
+    top: -1px;
+    left: 25px;
   }
 
   .aside__text-switching {
@@ -111,7 +242,90 @@
     border: none;
   }
 
+  .aside__title {
+    padding-left: 0;
+  }
+
   .aside__block {
     display: block;
+    margin-bottom: 0;
+  }
+
+  .aside__text {
+    width: 435px;
+    padding-top: 115px;
+    padding-left: 0;
+  }
+
+  .aside__item {
+    padding-top: 12px;
+    padding-left: 0;
+    justify-content: start;
+    margin-left: -30px;
+  }
+
+  .aside__container-text {
+    display: flex;
+    padding-left: 0;
+    margin-left: -1px;
+  }
+
+  .aside__text-info {
+    padding-left: 0;
+    margin-top: 42px;
+  }
+
+  .aside__text-info--margin-top {
+    padding-left: 64px;
+    text-align: start;
+  }
+
+  .aside__info {
+    padding-left: 87px;
+    margin-top: 69px;
+  }
+
+  .aside__info--padding {
+    padding-left: 75px;
+  }
+
+  .aside__info::before {
+    top: 54px;
+  }
+
+  .aside__info--margin::before {
+    left: 30px;
+  }
+
+  .aside__content {
+    margin-left: 61px;
+  }
+
+  .aside__container-switching {
+    margin-left: 117px;
+    margin-top: 174px;
+    background: none;
+    position: relative;
+  }
+
+  .aside__container-switching::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 1440px;
+    height: 656px;
+    background-image: url("../../img/cat-switch.png");
+    top: -195px;
+    right: -111px;
+    z-index: -1;
+  }
+
+  .aside__img {
+    display: none;
+  }
+
+  .aside__item-switching {
+    padding-top: 359px;
   }
 }

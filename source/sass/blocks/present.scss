@@ -14,3 +14,20 @@
   white-space: pre-line;
   text-align: center;
 }
+
+@media (min-width: $tablet-width) {
+  .present {
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .present__img {
+    padding-left: 78px;
+  }
+
+  .present__text {
+    text-align: start;
+    padding-right: 124px;
+  }
+}
