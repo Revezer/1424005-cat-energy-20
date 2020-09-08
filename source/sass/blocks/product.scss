@@ -130,6 +130,16 @@
     flex-direction: column;
     align-items: center;
     height: auto;
+    position: relative;
+  }
+
+  .product__img {
+    position: absolute;
+    bottom: 200px;
+  }
+
+  .product__img--position {
+    bottom: 190px;
   }
 
   .product__item {
@@ -205,7 +215,7 @@
   }
 
   .product__desc {
-    margin-top: 33px;
+    margin-top: 162px;
   }
 
   .product__dropdown-link {

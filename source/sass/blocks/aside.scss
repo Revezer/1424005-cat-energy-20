@@ -212,10 +212,17 @@
   .aside__container-switching {
     height: 462px;
     background-color: #eaeaea;
+    position: relative;
+  }
+
+  .aside__img {
+    position: absolute;
+    bottom: 29px;
+    left: 29px;
   }
 
   .aside__item-switching {
-    padding-top: 125px;
+    padding-top: 360px;
     padding-left: 33px;
   }
 
@@ -319,6 +326,12 @@
     top: -195px;
     right: -111px;
     z-index: -1;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .aside__container-switching::before {
+      background-image: url("../../img/cat-switch@2x.png");
+    }
   }
 
   .aside__img {

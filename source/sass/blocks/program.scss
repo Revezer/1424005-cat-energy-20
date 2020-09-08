@@ -16,6 +16,12 @@
   top: 0;
 }
 
+@media (min-resolution: 192dpi) {
+  .program__title--background::before {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
+}
+
 .program__title {
   @include oswald;
   @include text (36px, 36px, none, white);
@@ -127,6 +133,7 @@
 @media (min-width: $tablet-width) {
   .program {
     display: block;
+    position: relative;
   }
 
   .program__title {
@@ -148,9 +155,10 @@
 
   .program__picture {
     position: absolute;
-    top: 204px;
+    top: 256px;
     z-index: -1;
-    right: 312px;
+    right: 30px;
+    width: 709px;
   }
 
   .program__title--background::before {
@@ -231,6 +239,12 @@
   .program__slogan {
     padding-left: 80px;
     padding-top: 1px;
+  }
+
+  .program__picture {
+    width: 552px;
+    top: 25px;
+    right: 220px;
   }
 
   .program__button {

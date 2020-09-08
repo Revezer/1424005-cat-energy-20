@@ -41,7 +41,14 @@
       <section class="program page-main__program">
         <h1 class="program__title program__title--background">Функциональное питание для котов</h1>
         <p class="program__slogan">Занялся собой? займись котом!</p>
-        <img class="program__picture" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Продукт Кэт Энерджи">
+        <picture class="program__picture">
+          <!--<source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">-->
+          <source media="(min-width: 1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Продукт Кэт Энерджи">
+        </picture>
         <a class="program__button" href="#">Подобрать программу</a>
         <div class="program__items">
           <div class="program__item program__item--margin">
@@ -98,7 +105,12 @@
           </div>
         </div>
         <div class="aside__container-switching">
-          <img class="aside__img" src="img/before-mobile@1x.png" width="311" height="232" alt="Кот">
+          <picture class="aside__img">
+            <!--<source type="image/webp" media="(min-width: 768px)" srcset="img/image_cat_tablet@1x.webp 1x, img/image_cat_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">-->
+            <source media="(min-width: 768px)" srcset="img/image_cat_tablet@1x.png 1x, img/image_cat_tablet@2x.png 2x">
+            <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот">
+          </picture>
           <div class="aside__item-switching">
             <span class="aside__text-switching">Было</span>
             <div class="aside__switching"></div>
