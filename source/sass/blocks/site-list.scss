@@ -33,6 +33,11 @@
     @include text-media(18px, 24px);
     border: none;
   }
+
+  .site-list__item--active {
+    border-bottom: 2px solid $green;
+    padding-bottom: 6px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -42,5 +47,9 @@
 
   .site-list__item--color {
     color: white;
+  }
+
+  .site-list__item--active-index {
+    border-bottom: 2px solid white;
   }
 }
