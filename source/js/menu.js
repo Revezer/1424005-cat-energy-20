@@ -1,9 +1,9 @@
-var menuLink = document.querySelector(".main-nav");
-var Menu = document.querySelector(".site-list");
+var menuLink = document.querySelector(".page-header__toggle");
+var menu = document.querySelector(".main-nav");
 
-Menu.classList.remove("main-nav--display");
+menu.classList.remove("main-nav--display");
 
 menuLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    Menu.classList.toggle("main-nav--display");
+    menu.classList.toggle("main-nav--display");
   });
