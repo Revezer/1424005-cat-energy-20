@@ -116,6 +116,32 @@
   @include text(24px, 26px, none, black);
   padding: 0;
   padding-bottom: 32px;
+  position: relative;
+}
+
+.form__legend::before {
+  content: "";
+  position: absolute;
+  border: 1px solid $green;
+  height: 0;
+}
+
+.form__legend--line-data::before {
+  width: 96px;
+  top: 17px;
+  left: 202px;
+}
+
+.form__legend--line-comment::before {
+  width: 156px;
+  top: 16px;
+  left: 142px;
+}
+
+.form__legend--line-additionally::before {
+  width: 134px;
+  top: 16px;
+  left: 164px;
 }
 
 .form__list-checkbox {
@@ -271,6 +297,46 @@
     margin-left: 50px;
   }
 
+  .form__legend::after {
+    content: "";
+    position: absolute;
+    border: 1px solid $green;
+    height: 0;
+    width: 28px;
+    top: 23px;
+  }
+
+  .form__legend--line-data::before {
+    width: 143px;
+    top: 23px;
+    left: 553px;
+  }
+
+  .form__legend--line-data::after {
+    right: 551px;
+  }
+
+  .form__legend--line-comment::before {
+    width: 477px;
+    top: 23px;
+    left: 219px;
+  }
+
+  .form__legend--line-comment::after {
+    right: 220px;
+  }
+
+  .form__legend--line-additionally::before {
+    width: 444px;
+    top: 21px;
+    left: 252px;
+  }
+
+  .form__legend--line-additionally::after {
+    top: 21px;
+    right: 251px;
+  }
+
   .form__container-label {
     padding-top: 25px;
     padding-left: 1px;
@@ -393,6 +459,37 @@
     margin-top: 22px;
     margin-left: 0;
     padding-bottom: 34px;
+  }
+
+  .form__legend--line-data::before {
+    width: 776px;
+    top: 24px;
+    left: 552px;
+  }
+
+  .form__legend--line-data::after {
+    width: 68px;
+    top: 24px;
+  }
+
+  .form__legend--line-comment::before {
+    width: 1106px;
+    left: 222px;
+  }
+
+  .form__legend--line-comment::after {
+    width: 68px;
+    top: 23px;
+  }
+
+  .form__legend--line-additionally::before {
+    width: 1076px;
+    top: 23px;
+  }
+
+  .form__legend--line-additionally::after {
+    top: 22px;
+    width: 68px;
   }
 
   .form__label {

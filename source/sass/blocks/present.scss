@@ -7,6 +7,12 @@
   align-items: center;
 }
 
+@media (min-resolution: 192dpi) {
+  .present {
+    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
 .present__text {
   @include arial;
   @include text(16px, 20px, none, white);
@@ -20,6 +26,12 @@
     background-image: url("../../img/gift-photo-tablet@1x.jpg");
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .present {
+      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .present__img {

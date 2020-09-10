@@ -29,6 +29,7 @@
 
 .page-header__container {
   height: 54px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,6 +63,12 @@
     left: 610px;
     background-image: url("../../img/index-background-desktop@1x.jpg");
     z-index: -1;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .page-header--img::after {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .page-header__img {

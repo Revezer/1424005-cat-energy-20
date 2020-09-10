@@ -26,7 +26,7 @@
 
 .additional-product__item {
   border-bottom: 1px solid #cdcdcd;
-  margin-top: 12px;
+  margin-top: 11px;
 }
 
 .additional-product__item-title {
@@ -58,6 +58,13 @@
   align-items: center;
   text-decoration: none;
   margin-bottom: 19px;
+}
+
+.additional-product__present {
+  margin-bottom: 35px;
+  margin-top: 39px;
+  width: 280px;
+  height: 289px;
 }
 
 @media (min-width: $tablet-width) {
@@ -135,6 +142,13 @@
     margin-top: 8px;
     margin-left: 37px;
   }
+
+  .additional-product__present {
+    width: 708px;
+    height: 200px;
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -153,8 +167,8 @@
   }
 
   .additional-product__title::before {
-    width: 955px;
-    left: 373px;
+    width: 67px;
+    right: 1231px;
     top: 24px;
   }
 
@@ -203,16 +217,22 @@
     margin-left: 33px;
   }
 
-  .page-main__present {
+  .additional-product__present {
     margin-left: 79px;
     margin-top: 1px;
     width: 245px;
     height: 290px;
-    background-image: url("../../img/gift-photo-desktop.jpg");
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
     flex-direction: column;
     justify-content: start;
     align-items: normal;
     flex-shrink: 0;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .additional-product__present {
+      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .present__img {
