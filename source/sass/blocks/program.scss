@@ -54,6 +54,15 @@
   margin-top: 2px;
 }
 
+.program__button:hover,
+.program__button:focus {
+  background-color: $green-2;
+}
+
+.program__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .program__item {
   width: 280px;
   height: 266px;
@@ -123,11 +132,21 @@
   display: block;
   position: absolute;
   background-image: url("../../img/icon-arrow.svg");
-  width: 32px;
+  width: 30px;
   height: 12px;
   background-repeat: no-repeat;
   bottom: 5px;
   left: 120px;
+}
+
+.program__link:hover::after {
+  background-image: url("../../img/icon-arrow-hover.svg");
+  width: 32px;
+  background-position: center;
+}
+
+.program__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
