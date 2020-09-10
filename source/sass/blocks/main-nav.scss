@@ -12,6 +12,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+  }
+
   .main-nav__list {
     padding-left: 94px;
     margin-top: -4px;
