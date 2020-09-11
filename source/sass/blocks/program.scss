@@ -51,7 +51,16 @@
   align-items: center;
   width: 280px;
   height: 40px;
-  margin-top: 2px;
+  margin-top: 0;
+}
+
+.program__button:hover,
+.program__button:focus {
+  background-color: $green-2;
+}
+
+.program__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .program__item {
@@ -114,8 +123,8 @@
 }
 
 .program__item--margin {
-  margin-top: 22px;
-  margin-bottom: 29px;
+  margin-top: 21px;
+  margin-bottom: 20px;
 }
 
 .program__link::after {
@@ -123,11 +132,21 @@
   display: block;
   position: absolute;
   background-image: url("../../img/icon-arrow.svg");
-  width: 32px;
+  width: 30px;
   height: 12px;
   background-repeat: no-repeat;
   bottom: 5px;
   left: 120px;
+}
+
+.program__link:hover::after {
+  background-image: url("../../img/icon-arrow-hover.svg");
+  width: 32px;
+  background-position: center;
+}
+
+.program__link:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

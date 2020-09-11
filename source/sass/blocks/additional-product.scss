@@ -60,6 +60,15 @@
   margin-bottom: 19px;
 }
 
+.additional-product__link:hover,
+.additional-product__link:focus {
+  background-color: $green-2;
+}
+
+.additional-product__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .additional-product__present {
   margin-bottom: 35px;
   margin-top: 39px;

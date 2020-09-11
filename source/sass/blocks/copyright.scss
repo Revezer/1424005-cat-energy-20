@@ -18,6 +18,19 @@
   background-repeat: no-repeat;
 }
 
+.copyright__link-img:hover,
+.copyright__link-img:focus {
+  background-image: url("../../img/htmlacademy-hover.svg");
+}
+
+.copyright__link-img:active {
+  opacity: 0.3;
+}
+
+.copyright__link-img-text:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     width: 163px;

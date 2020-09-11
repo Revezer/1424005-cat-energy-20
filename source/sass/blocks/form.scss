@@ -8,7 +8,7 @@
   margin: 0;
   padding-bottom: 10px;
   border-bottom: 1px solid #d9d9d9;
-  padding-top: 1px;
+  padding-top: 3px;
 }
 
 .form__label {
@@ -38,6 +38,8 @@
   height: 43px;
   padding: 0;
   padding-left: 15px;
+  appearance: textfield;
+  border: 1px solid #e7e7e7;
 }
 
 .form__input--size {
@@ -51,6 +53,46 @@
 .form__input--width-age {
   width: 155px;
   margin-left: 2px;
+}
+
+.form__label--icon-email {
+  position: relative;
+}
+
+.form__label--icon-email::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../img/icon_email.svg");
+  top: 16px;
+  left: 245px;
+  width: 22px;
+  height: 15px;
+  background-repeat: no-repeat;
+}
+
+.form__label--icon-email:hover::before {
+  background-image: url("../../img/icon_email-hover.svg");
+}
+
+.form__label--padding-number {
+  position: relative;
+}
+
+.form__label--padding-number::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../../img/icon-phone.svg");
+  top: 13px;
+  left: 247px;
+  width: 22px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
+
+.form__label--padding-number:hover::before {
+  background-image: url("../../img/icon-phone-hover.svg");
 }
 
 .form__list {
@@ -197,6 +239,15 @@
   margin-left: 20px;
 }
 
+.form__button:hover,
+.form__button:focus {
+  background-color: $green-2;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .form__text-item {
   @include arial;
   @include text(14px, 18px, normal, black);
@@ -207,9 +258,30 @@
   margin-bottom: 32px;
 }
 
+.form__input:hover,
+.form__input:focus {
+  border-color: #cdcdcd;
+}
+
+.form__input:active {
+  border: 1px solid #444444;
+}
+
+.form__inpute:invalid {
+  border-color: #ff8282;
+}
+
+.form__radio-label:active {
+  opacity: 0.3;
+}
+
+.form__checkbox-label:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .form__wrap {
-    padding-top: 5px;
+    padding-top: 8px;
     border: none;
   }
 
@@ -402,6 +474,16 @@
     margin-top: 75px;
     margin-left: 62px;
   }
+
+  .form__label--icon-email::before {
+    top: 38px;
+    left: 643px;
+  }
+
+  .form__label--padding-number::before {
+    top: 35px;
+    left: 644px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -423,6 +505,7 @@
 
   .form__div-container {
     display: flex;
+    padding-top: 3px;
   }
 
   .form__container-label {
@@ -431,7 +514,8 @@
   }
 
   .form__text--weight-width {
-    width: 85px;
+    width: 75px;
+    flex-shrink: 0;
   }
 
   .form__text--age-width {
@@ -527,5 +611,15 @@
   .form__text-item {
     margin-left: 82px;
     margin-top: 76px;
+  }
+
+  .form__label--icon-email::before {
+    top: 38px;
+    left: 531px;
+  }
+
+  .form__label--padding-number::before {
+    top: 35px;
+    left: 614px;
   }
 }

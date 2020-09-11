@@ -34,9 +34,27 @@
     border: none;
   }
 
+  .site-list__item:hover,
+  .site-list__item:focus {
+    opacity: 0.6;
+  }
+
+  .site-list__item:active {
+    opacity: 0.3;
+  }
+
   .site-list__item--active {
     border-bottom: 2px solid $green;
     padding-bottom: 6px;
+  }
+
+  .site-list__item--active:hover,
+  .site-list__item--active:focus {
+    opacity: 1;
+  }
+
+  .site-list__item--active:active {
+    opacity: 1;
   }
 }
 

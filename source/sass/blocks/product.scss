@@ -68,6 +68,15 @@
   margin-bottom: 24px;
 }
 
+.product__link:hover,
+.product__link:focus {
+  background-color: $green-2;
+}
+
+.product__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .product__dropdown {
   text-align: center;
   border-bottom: 1px solid $grey-2;
@@ -113,6 +122,15 @@
   justify-content: center;
   margin-left: 20px;
   margin-bottom: 25px;
+}
+
+.product__dropdown-link:hover,
+.product__dropdown-link:focus {
+  background-color: $grey-2;
+}
+
+.product__dropdown-link:active {
+  color: rgba(68, 68, 68, 0.3);
 }
 
 @media (min-width: $tablet-width) {
