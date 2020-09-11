@@ -82,14 +82,14 @@
 </symbol><symbol id="icon-plus-mobile" viewBox="0 0 30 30">
   <style type="text/css">
     .st0 {
-      fill: #231F20;
+      fill: #231f20;
     }
   </style>
   <polygon class="st0" points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
 </symbol><symbol id="icon-plus" viewBox="0 0 60 60">
   <style type="text/css">
     .st0 {
-      fill: #231F20;
+      fill: #231f20;
     }
   </style>
   <polygon class="st0" points="60,29.5 30.5,29.5 30.5,0 29.5,0 29.5,29.5 0,29.5 0,30.5 29.5,30.5 29.5,60 30.5,60 30.5,30.5
@@ -97,14 +97,14 @@
 </symbol><symbol id="icon-right-arrow-long" viewBox="0 0 24.2 11">
   <style type="text/css">
     .st0 {
-      fill: #3F4242;
+      fill: #3f4242;
     }
   </style>
   <polygon class="st0" points="17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 "/>
 </symbol><symbol id="icon-right-arrow-verylong" viewBox="0 0 32 11">
   <style type="text/css">
     .st0 {
-      fill: #3F4242;
+      fill: #3f4242;
     }
   </style>
   <polygon class="st0" points="25.4,0 32,5.5 25.4,11 25.4,6.6 0,6.6 0,4.4 25.4,4.4 "/>

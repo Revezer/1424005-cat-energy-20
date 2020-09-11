@@ -104,9 +104,6 @@ exports.clean = clean;
 const build = gulp.series(
   clean,
   styles,
-  sprite,
-  images,
-  fwebp,
   copy
 );
 
