@@ -327,6 +327,14 @@
     position: relative;
   }
 
+  .aside__img {
+    position: absolute;
+    bottom: 11px;
+    left: 29px;
+    width: 100%;
+    height: auto;
+  }
+
   .aside__container-switching::before {
     content: "";
     display: block;
@@ -335,19 +343,9 @@
     width: 1440px;
     height: 656px;
     background-image: url("../../img/cat-switch.png");
-    top: -195px;
+    top: -1px;
     right: -111px;
     z-index: -1;
-  }
-
-  @media (min-resolution: 192dpi) {
-    .aside__container-switching::before {
-      background-image: url("../../img/cat-switch@2x.png");
-    }
-  }
-
-  .aside__img {
-    display: none;
   }
 
   .aside__item-switching {

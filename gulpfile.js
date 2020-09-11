@@ -63,7 +63,7 @@ exports.images = images;
 const fwebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality:90}))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.webp = fwebp;
@@ -72,7 +72,7 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("source/img"))
 }
 
 exports.sprite = sprite;
