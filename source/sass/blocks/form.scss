@@ -149,6 +149,10 @@
   margin-top: 13px;
 }
 
+.form__fieldset--comment {
+  margin-bottom: 26px;
+}
+
 .form__legend--margin {
   margin-top: 13px;
 }
@@ -333,6 +337,7 @@
     padding-top: 30px;
     height: 165px;
     width: 586px;
+    margin-bottom: 74px;
   }
 
   .form__radio + label::before {
@@ -341,6 +346,10 @@
     background-size: contain;
     bottom: -5px;
     left: -15px;
+  }
+
+  .form__fieldset {
+    margin-bottom: 63px;
   }
 
   .form__filter-text {
@@ -365,7 +374,7 @@
 
   .form__legend {
     @include text-media(36px, 36px);
-    margin-top: 27px;
+    margin-top: 0;
     margin-left: 50px;
   }
 
@@ -438,6 +447,10 @@
     margin-top: 36px;
   }
 
+  .form__fieldset--margin {
+    margin-bottom: 0;
+  }
+
   .form__input--size {
     margin-top: 45px;
     margin-left: 51px;
@@ -506,7 +519,7 @@
   .form__div-container {
     display: flex;
     padding-top: 3px;
-    margin-bottom: 23px;
+    margin-bottom: -4px;
   }
 
   .form__container-label {
