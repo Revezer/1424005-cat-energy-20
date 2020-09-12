@@ -275,11 +275,19 @@
   border-color: #ff8282;
 }
 
+.form__radio:focus + .form__radio-label {
+  opacity: 0.3;
+}
+
 .form__radio-label:active {
   opacity: 0.3;
 }
 
 .form__checkbox-label:active {
+  opacity: 0.3;
+}
+
+.form__checkbox:focus + .form__checkbox-label {
   opacity: 0.3;
 }
 
