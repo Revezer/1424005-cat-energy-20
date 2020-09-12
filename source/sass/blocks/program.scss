@@ -65,7 +65,7 @@
 
 .program__item {
   width: 280px;
-  height: 266px;
+  min-height: 266px;
   background-color: $grey;
 }
 
@@ -195,7 +195,7 @@
 
   .program__item {
     width: 708px;
-    height: 372px;
+    min-height: 372px;
     margin-left: 30px;
   }
 
