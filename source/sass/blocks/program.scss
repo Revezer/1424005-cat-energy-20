@@ -18,7 +18,7 @@
 
 @media (min-resolution: 192dpi) {
   .program__title--background::before {
-    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
 
@@ -89,7 +89,7 @@
 .program__title-item--slim::before {
   width: 50px;
   height: 53px;
-  background-image: url("../../img/cat_back.svg");
+  background-image: url("img/cat_back.svg");
   right: 210px;
   bottom: -9px;
 }
@@ -97,7 +97,7 @@
 .program__title-item--pro::before {
   width: 67px;
   height: 50px;
-  background-image: url("../../img/cat_back-pro.svg");
+  background-image: url("../img/cat_back-pro.svg");
   right: 200px;
   bottom: -9px;
 }
@@ -131,7 +131,7 @@
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../img/icon-arrow.svg");
+  background-image: url("../img/icon-arrow.svg");
   width: 30px;
   height: 12px;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@
 }
 
 .program__link:hover::after {
-  background-image: url("../../img/icon-arrow-hover.svg");
+  background-image: url("../img/icon-arrow-hover.svg");
   width: 32px;
   background-position: center;
 }
@@ -207,7 +207,7 @@
   }
 
   .program__title-item--slim::before {
-    background-image: url("../../img/cat_back-tablet.svg");
+    background-image: url("../img/cat_back-tablet.svg");
     width: 200px;
     height: 211px;
     right: 63px;
@@ -215,7 +215,7 @@
   }
 
   .program__title-item--pro::before {
-    background-image: url("../../img/cat_back-pro-tablet.svg");
+    background-image: url("../img/cat_back-pro-tablet.svg");
     width: 268px;
     height: 200px;
     right: 28px;
@@ -294,7 +294,7 @@
   }
 
   .program__title-item--slim::before {
-    background-image: url("../../img/cat_back-desktop.svg");
+    background-image: url("../img/cat_back-desktop.svg");
     width: 100px;
     height: 106px;
     top: 41px;
@@ -302,7 +302,7 @@
   }
 
   .program__title-item--pro::before {
-    background-image: url("../../img/cat_back-pro-desctop.svg");
+    background-image: url("../img/cat_back-pro-desctop.svg");
     width: 134px;
     height: 100px;
     top: 47px;

@@ -32,36 +32,36 @@
 
 .social__link--icon-vk {
   position: absolute;
-  background-image: url("../../img/icon-vk.svg");
+  background-image: url("../img/icon-vk.svg");
   width: 28px;
   height: 22px;
 }
 
 .social__link--icon-vk:hover,
 .social__link--icon-vk:focus {
-  background-image: url("../../img/vk-hover.svg");
+  background-image: url("../img/vk-hover.svg");
 }
 
 .social__link--icon-i {
-  background-image: url("../../img/icon-insta.svg");
+  background-image: url("../img/icon-insta.svg");
   width: 20px;
   height: 20px;
 }
 
 .social__link--icon-i:hover,
 .social__link--icon-i:focus {
-  background-image: url("../../img/i-hover.svg");
+  background-image: url("../img/i-hover.svg");
 }
 
 .social__link--icon-fb {
-  background-image: url("../../img/icon-fb.svg");
+  background-image: url("../img/icon-fb.svg");
   width: 22px;
   height: 22px;
 }
 
 .social__link--icon-fb:hover,
 .social__link--icon-fb:focus {
-  background-image: url("../../img/fb-hover.svg");
+  background-image: url("../img/fb-hover.svg");
 }
 
 @media (min-width: $tablet-width) {

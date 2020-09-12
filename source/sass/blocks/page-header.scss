@@ -48,7 +48,7 @@
   right: 10px;
   width: 21px;
   height: 21px;
-  background-image: url("../../img/cross.svg");
+  background-image: url("../img/cross.svg");
 }
 
 .page-header__container {
@@ -76,29 +76,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    position: relative;
-  }
-
-  .page-header--img::after {
-    content: "";
-    display: block;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 720px;
-    height: 696px;
-    top: -56px;
-    left: 610px;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
-    z-index: -1;
-  }
-
-  @media (min-resolution: 192dpi) {
-    .page-header--img::after {
-      background-image: url("../../img/index-background-desktop@2x.jpg");
-    }
-  }
-
   .page-header__img {
     margin-top: 54px;
     margin-left: 0;

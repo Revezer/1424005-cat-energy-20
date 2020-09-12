@@ -18,17 +18,15 @@
   .body__page-header {
     margin-top: 54px;
     width: 1330px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .body__page-footer {
     width: 1440px;
     padding-left: 0;
     padding-right: 0;
-    margin-left: -110px;
+    margin: auto;
     padding-bottom: 32px;
-  }
-
-  .body__page-main--form {
-    padding-top: 18px;
   }
 }

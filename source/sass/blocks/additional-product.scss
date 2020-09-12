@@ -231,7 +231,7 @@
     margin-top: 1px;
     width: 245px;
     height: 290px;
-    background-image: url("../../img/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
     flex-direction: column;
     justify-content: start;
     align-items: normal;
@@ -240,7 +240,7 @@
 
   @media (min-resolution: 192dpi) {
     .additional-product__present {
-      background-image: url("../../img/gift-photo-desktop@2x.jpg");
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
     }
   }
 

@@ -102,6 +102,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main {
+    width: 1220px;
+    margin: auto;
+  }
+
+  .page-main--form {
+    padding-top: 18px;
+  }
+
   .page-main__title {
     padding-top: 71px;
     padding-left: 0;

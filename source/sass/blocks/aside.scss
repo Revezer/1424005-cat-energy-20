@@ -50,13 +50,13 @@
 .aside__info--margin::before {
   top: 10px;
   left: -33px;
-  background-image: url("../../img/weight-back-mobile.svg");
+  background-image: url("../img/weight-back-mobile.svg");
 }
 
 .aside__info--padding::before {
   top: 10px;
   left: -21px;
-  background-image: url("../../img/weight-back-day-mobile.svg");
+  background-image: url("../img/weight-back-day-mobile.svg");
 }
 
 .aside__content {
@@ -116,7 +116,7 @@
   height: 14px;
   top: 4px;
   left: 18px;
-  background-image: url("../../img/slider.svg");
+  background-image: url("../img/slider.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -175,12 +175,12 @@
 
   .aside__info--margin::before {
     left: 21px;
-    background-image: url("../../img/weight-back.svg");
+    background-image: url("../img/weight-back.svg");
   }
 
   .aside__info--padding::before {
     left: 43px;
-    background-image: url("../../img/weight-back-day.svg");
+    background-image: url("../img/weight-back-day.svg");
   }
 
   .aside__content {
@@ -242,7 +242,7 @@
   }
 
   .aside__switching::before {
-    background-image: url("../../img/slider-tablet.svg");
+    background-image: url("../img/slider-tablet.svg");
     width: 428px;
     height: 40px;
     top: -1px;
@@ -342,7 +342,7 @@
     position: absolute;
     width: 1440px;
     height: 656px;
-    background-image: url("../../img/cat-switch.png");
+    background-image: url("../img/cat-switch.png");
     top: -1px;
     right: -111px;
     z-index: -1;

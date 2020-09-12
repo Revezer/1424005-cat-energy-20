@@ -63,7 +63,7 @@
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../img/icon_email.svg");
+  background-image: url("../img/icon_email.svg");
   top: 16px;
   left: 245px;
   width: 22px;
@@ -72,7 +72,7 @@
 }
 
 .form__label--icon-email:hover::before {
-  background-image: url("../../img/icon_email-hover.svg");
+  background-image: url("../img/icon_email-hover.svg");
 }
 
 .form__label--padding-number {
@@ -83,7 +83,7 @@
   content: "";
   display: block;
   position: absolute;
-  background-image: url("../../img/icon-phone.svg");
+  background-image: url("../img/icon-phone.svg");
   top: 13px;
   left: 247px;
   width: 22px;
@@ -92,7 +92,7 @@
 }
 
 .form__label--padding-number:hover::before {
-  background-image: url("../../img/icon-phone-hover.svg");
+  background-image: url("../img/icon-phone-hover.svg");
 }
 
 .form__list {
@@ -127,13 +127,13 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  background-image: url("../../img/radiobutton-off.svg");
+  background-image: url("../img/radiobutton-off.svg");
   position: absolute;
   bottom: -3px;
 }
 
 .form__radio:checked + label::before {
-  background-image: url("../../img/radiobutton-on.svg");
+  background-image: url("../img/radiobutton-on.svg");
 }
 
 .form__filter-text {
@@ -216,7 +216,7 @@
 }
 
 .form__checkbox:checked + .form__checkbox-label::before {
-  background-image: url("../../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
@@ -506,6 +506,7 @@
   .form__div-container {
     display: flex;
     padding-top: 3px;
+    margin-bottom: 23px;
   }
 
   .form__container-label {
@@ -537,10 +538,11 @@
   .form__fieldset {
     margin-top: 0;
     padding-left: 0;
+    margin-bottom: 64px;
   }
 
   .form__legend {
-    margin-top: 22px;
+    margin-top: 0;
     margin-left: 0;
     padding-bottom: 34px;
   }
@@ -587,10 +589,6 @@
     width: 572px;
   }
 
-  .form__fieldset--comment {
-    margin-top: 43px;
-  }
-
   .form__input--size {
     width: 1198px;
     margin-left: 1px;
@@ -599,8 +597,8 @@
     padding-left: 17px;
   }
 
-  .form__legend--margin {
-    margin-top: 66px;
+  .form__fieldset--margin {
+    margin-bottom: 0;
   }
 
   .form__button {

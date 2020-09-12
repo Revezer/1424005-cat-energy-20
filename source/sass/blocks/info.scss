@@ -35,19 +35,19 @@
 }
 
 .info__item--icon-leaf::before {
-  background-image: url("../../img/leaf.svg");
+  background-image: url("../img/leaf.svg");
 }
 
 .info__item--icon-powder::before {
-  background-image: url("../../img/powder.svg");
+  background-image: url("../img/powder.svg");
 }
 
 .info__item--icon-dining::before {
-  background-image: url("../../img/dining.svg");
+  background-image: url("../img/dining.svg");
 }
 
 .info__item--icon-clock::before {
-  background-image: url("../../img/clock.svg");
+  background-image: url("../img/clock.svg");
 }
 
 @media (min-width: $tablet-width) {
@@ -93,22 +93,22 @@
   }
 
   .info__item--icon-leaf::after {
-    background-image: url("../../img/number-one.svg");
+    background-image: url("../img/number-one.svg");
     width: 112px;
   }
 
   .info__item--icon-powder::after {
-    background-image: url("../../img/number-two.svg");
+    background-image: url("../img/number-two.svg");
     width: 134px;
   }
 
   .info__item--icon-dining::after {
-    background-image: url("../../img/number-three.svg");
+    background-image: url("../img/number-three.svg");
     width: 138px;
   }
 
   .info__item--icon-clock::after {
-    background-image: url("../../img/number-four.svg");
+    background-image: url("../img/number-four.svg");
     width: 136px;
   }
 

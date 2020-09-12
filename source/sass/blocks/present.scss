@@ -1,6 +1,6 @@
 .present {
   background-color: $green;
-  background-image: url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -9,7 +9,7 @@
 
 @media (min-resolution: 192dpi) {
   .present {
-    background-image: url("../../img/gift-photo-mobile@2x.jpg");
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 }
 
@@ -23,14 +23,14 @@
 
 @media (min-width: $tablet-width) {
   .present {
-    background-image: url("../../img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-resolution: 192dpi) {
     .present {
-      background-image: url("../../img/gift-photo-tablet@2x.jpg");
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
   }
 
